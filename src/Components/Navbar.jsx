@@ -1,7 +1,12 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
+import { Gb, Ge } from "react-flags-select";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const { t, i18n } = useTranslation();
+
+  const [language, setLanguage] = useState(true);
 
   return (
     <nav className="bg-[#ea9573] shadow-md text-gray-100 fixed w-full  ">
@@ -9,7 +14,7 @@ export default function Navbar() {
         <div className="flex justify-between h-16 items-center">
           {/* Logo */}
           <div
-            className="text-2xl font-bold "
+            className="text-3xl font-bold "
             style={{ fontFamily: "Cormorant Garamond" }}
           >
             OK Design
@@ -18,20 +23,33 @@ export default function Navbar() {
           {/* Desktop Menu */}
           <div
             className="hidden md:flex space-x-6 font-extrabold"
-            style={{ fontFamily: "Cormorant Garamond", fontSize: "20px" }}
+            style={{
+              fontFamily: "Cormorant Garamond",
+              fontSize: `${language ? "20px" : "17px"}`,
+            }}
           >
             <a href="#home" className="hover:text-[#2c2c2c]">
-              Home
-            </a>
-            <a href="#about" className="hover:text-[#2c2c2c]">
-              About
+              {t("homeButton")}
             </a>
             <a href="#projects" className="hover:text-[#2c2c2c]">
-              Projects
+              {t("projectsButton")}
             </a>
+            <a href="#about" className="hover:text-[#2c2c2c]">
+              {t("aboutButton")}
+            </a>
+
             <a href="#contact" className="hover:text-[#2c2c2c]">
-              Contact
+              {t("contactButton")}
             </a>
+            <button
+              className="cursor-pointer text-2xl "
+              onClick={() => {
+                setLanguage(!language);
+                i18n.changeLanguage(`${language ? "ge" : "en"}`);
+              }}
+            >
+              {language ? <Ge /> : <Gb />}
+            </button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -53,26 +71,36 @@ export default function Navbar() {
           style={{ fontFamily: "Cormorant Garamond", fontSize: "20px" }}
         >
           <a href="#home" className="block px-3 py-2 rounded hover:bg-gray-700">
-            Home
-          </a>
-          <a
-            href="#about"
-            className="block px-3 py-2 rounded hover:bg-gray-700"
-          >
-            About
+            {t("homeButton")}
           </a>
           <a
             href="#projects"
             className="block px-3 py-2 rounded hover:bg-gray-700"
           >
-            Projects
+            {t("projectsButton")}
           </a>
+          <a
+            href="#about"
+            className="block px-3 py-2 rounded hover:bg-gray-700"
+          >
+            {t("aboutButton")}
+          </a>
+
           <a
             href="#contact"
             className="block px-3 py-2 rounded hover:bg-gray-700"
           >
-            Contact
+            {t("contactButton")}
           </a>
+          <button
+            className="block px-3 py-2 rounded hover:bg-gray-700 "
+            onClick={() => {
+              setLanguage(!language);
+              i18n.changeLanguage(`${language ? "ge" : "en"}`);
+            }}
+          >
+            {language ? <Ge /> : <Gb />}
+          </button>
         </div>
       )}
     </nav>
