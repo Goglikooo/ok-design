@@ -12,16 +12,23 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 const images = [MainPicture, SecondPicture, ThirdPicture];
 export default function FirstCard() {
   const { t } = useTranslation();
+  // xl:bg-linear-to-r from-[#f5be9e] to-transparent  xl:flex-row-reverse
   return (
     <div
-      className="md:rounded-xl h-full md:h-[680px] pb-4 md:bg-linear-to-r from-[#f5be9e] to-transparent  md:flex md:flex-row-reverse text-[#2c2c2c] "
+      className="
+      py-18 min-h-screen
+      flex flex-col 
+      relative z-18  px-4   text-[#253c3f]"
       style={{
-        fontFamily: "Cormorant Garamond",
-        fontSize: "20px",
+        fontFamily: "Cinzel",
+        fontOpticalSizing: "auto",
+        letterSpacing: "0.1rem",
       }}
     >
       <div
-        className="md:w-250 
+        className=" 
+        shrink-0
+        xl:w-230
     [&_.swiper-button-next]:text-[#548780]!
     [&_.swiper-button-prev]:text-[#548780]!
     [&_.swiper-pagination-bullet]:bg-gray-300! 
@@ -49,20 +56,19 @@ export default function FirstCard() {
           ))}
         </Swiper>
       </div>
-      <div className="md:w-120 text-center mt-2 flex md:mt-20 gap-5 md:gap-20 justify-start items-center flex-col">
-        <h1 className="text-3xl md:text-5xl font-bold  ">{t("slogan")}</h1>
-        <p className="text-3xs md:text-2xl font-semibold">
+      <div className=" text-center flex my-2 justify-around items-center flex-col flex-1 ">
+        <h1 className="text-4xl ml:text-5xl font-bold ">{t("slogan")}</h1>
+        <p className="text-1xl md:text-2xl font-semibold ">
           {t("sloganAddition")}
         </p>
-        <button className="bg-[#ea9573] rounded-2xl pt-2 pb-2 pl-10 pr-10 font-bold">
-          Explore our Projects
-        </button>
-        <button className="bg-[#ea9573] rounded-2xl pt-2 pb-2 pl-10 pr-10 font-bold">
-          Meet OK Design
-        </button>
-        <button className="cursor-pointer animate-bounce">
-          <KeyboardDoubleArrowDownOutlinedIcon />
-        </button>
+        <div className="text-[#ffffff] font-bold flex flex-col gap-3 ">
+          <button className="bg-[#ea9573]  rounded-2xl pt-2 pb-2 pl-10 pr-10 ">
+            Explore our Projects
+          </button>
+          <button className="bg-[#ea9573]  rounded-2xl pt-2 pb-2 pl-10 pr-10 font-bold">
+            Meet OK Design
+          </button>
+        </div>
       </div>
     </div>
   );

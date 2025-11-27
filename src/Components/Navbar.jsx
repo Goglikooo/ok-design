@@ -9,13 +9,17 @@ export default function Navbar() {
   const [language, setLanguage] = useState(true);
 
   return (
-    <nav className="bg-[#ea9573] shadow-md text-gray-100 fixed w-full  ">
+    <nav className="bg-[#ea9573] shadow-md text-gray-100 fixed w-full relativ  z-25">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           {/* Logo */}
           <div
             className="text-3xl font-bold "
-            style={{ fontFamily: "Cormorant Garamond" }}
+            style={{
+              fontFamily: "Cinzel",
+              fontOpticalSizing: "auto",
+              letterSpacing: "0.1rem",
+            }}
           >
             OK Design
           </div>
@@ -67,7 +71,7 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {isOpen && (
         <div
-          className="md:hidden bg-[#ea9573] shadow-md text-gray-100 px-2 pt-2 pb-3 space-y-1"
+          className="md:hidden  top-0 left-0 w-full bg-[#ea9573] shadow-md text-gray-100 px-2 pt-2 pb-3 space-y-1 "
           style={{ fontFamily: "Cormorant Garamond", fontSize: "20px" }}
         >
           <a href="#home" className="block px-3 py-2 rounded hover:bg-gray-700">
