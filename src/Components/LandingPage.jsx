@@ -6,26 +6,27 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-
+import { ArrowRight } from "lucide-react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 const images = [MainPicture, SecondPicture, ThirdPicture];
-export default function FirstCard() {
+export default function LandingPage() {
   const { t } = useTranslation();
   // xl:bg-linear-to-r from-[#f5be9e] to-transparent  xl:flex-row-reverse
   return (
     <div
       className="
+      
       py-18 min-h-screen
       flex flex-col 
       relative z-18  px-4   text-[#253c3f]"
       style={{
-        fontFamily: "Cinzel",
-        fontOpticalSizing: "auto",
         letterSpacing: "0.1rem",
       }}
     >
       <div
         className=" 
+        
+       
         shrink-0
         xl:w-230
     [&_.swiper-button-next]:text-[#548780]!
@@ -61,11 +62,12 @@ export default function FirstCard() {
           {t("sloganAddition")}
         </p>
         <div className="text-[#ffffff] font-bold flex flex-col gap-3 ">
-          <button className="bg-[#ea9573]  rounded-2xl pt-2 pb-2 pl-10 pr-10 ">
-            Explore our Projects
+          <button className="bg-[#ea9573]  rounded-2xl pt-2 pb-2 pl-10 pr-10 flex justify-between align-center">
+            {t("projectsButton")} <ArrowRight />
           </button>
-          <button className="bg-[#ea9573]  rounded-2xl pt-2 pb-2 pl-10 pr-10 font-bold">
-            Meet OK Design
+          <button className="bg-[#ea9573]  rounded-2xl pt-2 pb-2 pl-10 pr-10 font-bold flex justify-between align-center">
+            {t("getStarted")}
+            <ArrowRight />
           </button>
         </div>
       </div>

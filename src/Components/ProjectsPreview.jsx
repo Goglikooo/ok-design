@@ -8,9 +8,9 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
-import { EffectCards } from "swiper/modules";
+import { EffectCards, Navigation } from "swiper/modules";
 import { useTranslation } from "react-i18next";
-export default function ProjectsPage() {
+export default function ProjectsPreview() {
   const { t } = useTranslation();
   const projects = [
     {
@@ -42,21 +42,39 @@ export default function ProjectsPage() {
         "images/project3/picture4_4.jpg",
       ],
     },
+    {
+      title: "Saburtalo",
+      description: "Total Area: 42m²",
+      images: [
+        "images/project3/picture4_2.jpg",
+        "images/project3/picture4_1.jpg",
+        "images/project3/picture4_3.jpg",
+        "images/project3/picture4_4.jpg",
+      ],
+    },
   ];
 
   const Cardgenerator = ({ projectsArray }) => {
     return (
-      <>
+      <div
+        className=" grid md:grid-cols-4 gap-5 mb-5 [&_.swiper-button-next]:text-[#548780]!
+    [&_.swiper-button-prev]:text-[#548780]! "
+      >
         {projectsArray.map((card, i) => (
           <Card
             key={i}
-            style={{ border: "3px solid #253c3f", backgroundColor: "#f5be9e" }}
+            style={{
+              border: "3px solid #253c3f",
+              backgroundColor: "#f5be9e",
+              boxShadow: "5px 5px 5px black",
+            }}
           >
             <Swiper
               pagination={true}
               effect={"cards"}
               grabCursor={true}
-              modules={[Pagination, EffectCards]}
+              navigation={true}
+              modules={[Pagination, EffectCards, Navigation]}
             >
               {card.images.map((img, index) => (
                 <SwiperSlide key={index}>
@@ -65,7 +83,7 @@ export default function ProjectsPage() {
               ))}
             </Swiper>
 
-            <CardContent className="bg-[#f5be9e]  text-[#253c3f] border-t-2">
+            <CardContent className="bg-[#f5be9e]  text-white ">
               <Typography
                 gutterBottom
                 variant="h5"
@@ -74,6 +92,7 @@ export default function ProjectsPage() {
                   fontFamily: "Cinzel",
                   fontOpticalSizing: "auto",
                   fontWeight: "600",
+                  letterSpacing: "0.1rem",
                 }}
               >
                 {card.title}
@@ -89,32 +108,32 @@ export default function ProjectsPage() {
                 {card.description}
               </Typography>
             </CardContent>
-            <CardActions className="bg-[rgb(245,190,158)] ">
-              <Button size="small">Details</Button>
-              <Button size="small">Share</Button>
-            </CardActions>
           </Card>
         ))}
-      </>
+      </div>
     );
   };
 
   return (
-    <div
-      className="relative p-5 flex justify-center align-center flex-col gap-5 bg-[#548780] border-t-[#ea9573] border-t-4 [&_.swiper-pagination-bullet-active]:bg-[#548780]! "
-      style={{
-        fontFamily: "Cinzel",
-        fontOpticalSizing: "auto",
-        letterSpacing: "0.1rem",
-      }}
-    >
-      <h2 className="text-4xl text-center font-bold text-white">
-        {t("ourProjects")}
-      </h2>
-      <Cardgenerator projectsArray={projects} />
-      <button className="bg-[#ea9573]   pt-2 pb-2 pl-10 pr-10 text-white font-semibold">
-        Explore More...
-      </button>
-    </div>
+    <section className="py-5 bg-[#548780] border-t-[#ea9573] border-t-4">
+      <div
+        className="mx-auto px-4 max-w-7xl  [&_.swiper-pagination-bullet-active]:bg-[#548780]!"
+        style={{
+          fontFamily: "Cinzel",
+          fontOpticalSizing: "auto",
+          letterSpacing: "0.1rem",
+        }}
+      >
+        <h2 className="text-4xl pb-5 text-center font-bold text-white">
+          {t("ourProjects")}
+        </h2>
+
+        <Cardgenerator projectsArray={projects} />
+
+        <button className="bg-[#ea9573]  w-full pt-2 pb-2 pl-10 pr-10 text-white font-semibold">
+          {t("viewAllProjects")}
+        </button>
+      </div>
+    </section>
   );
 }
