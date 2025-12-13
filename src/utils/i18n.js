@@ -15,6 +15,7 @@ const resources = {
       slogan: "Sophisticated interiors for modern living",
       sloganAddition:
         "OK Design delivers high-end design solutions tailored to your lifestyle and vision.",
+      ourProjects: "Our Projects",
     },
   },
   ge: {
@@ -27,6 +28,7 @@ const resources = {
       slogan: "თანამედროვე ცხოვრებისთვის შექმნილი დახვეწილი ინტერიერი",
       sloganAddition:
         "OK Design გთავაზობთ თქვენს საჭიროებებზე მორგებულ მაღალი დონის დიზაინს",
+      ourProjects: "ჩვენი პროექტები",
     },
   },
 };

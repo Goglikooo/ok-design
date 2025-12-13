@@ -3,7 +3,6 @@ import SecondPicture from "../assets/2.jpg";
 import ThirdPicture from "../assets/3.jpg";
 import { useTranslation } from "react-i18next";
 import { Swiper, SwiperSlide } from "swiper/react";
-import KeyboardDoubleArrowDownOutlinedIcon from "@mui/icons-material/KeyboardDoubleArrowDownOutlined";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";

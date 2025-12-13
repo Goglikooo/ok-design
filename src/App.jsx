@@ -2,6 +2,7 @@ import { useState } from "react";
 import Navbar from "./Components/Navbar.jsx";
 import FirstCard from "./Components/FirstCard.jsx";
 import "./App.css";
+import ProjectsPage from "./Components/ProjectsPage.jsx";
 
 function App() {
   return (
@@ -10,9 +11,10 @@ function App() {
         <div className="w-1/3 bg-[#548780]"></div>
         <div className="w-2/3 bg-[#f5be9e]"></div>
       </div>
-      <div className="relative z-20  text-white w-full h-full">
+      <div className="relative z-20   w-full h-full">
         <Navbar />
         <FirstCard />
+        <ProjectsPage />
       </div>
     </div>
   );

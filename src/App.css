@@ -1,1 +1,5 @@
 @import "tailwindcss";
+
+.swiper-pagination-fraction {
+  color: white; /* fraction text color */
+}
