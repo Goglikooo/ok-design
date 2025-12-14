@@ -5,30 +5,19 @@ export default function ServicesPreview() {
   const services = [
     {
       icon: Pen,
-      title: "Design & Visualization",
-      description:
-        "Complete design solutions with 3D renderings and technical drawings",
+      title: `${t("firstServiceTitle")}`,
+      description: `${t("firstServiceDescription")}`,
     },
     {
       icon: Key,
-      title: "Turn-Key Solution",
-      description: "Full project management from start to finish",
+      title: `${t("secondServiceTitle")}`,
+      description: `${t("secondServiceDescription")}`,
     },
     {
       icon: ClipboardCheck,
-      title: "Renovation Monitoring",
-      description: "Professional oversight for quality execution",
+      title: `${t("thirdServiceTitle")}`,
+      description: `${t("thirdServiceDescription")}`,
     },
-  ];
-
-  const processSteps = [
-    "Initial Consultation",
-    "Concept Development",
-    "3D Visualization",
-    "Client Review & Revisions",
-    "Final Documentation",
-    "Implementation",
-    "Final Reveal",
   ];
 
   return (
@@ -43,9 +32,9 @@ export default function ServicesPreview() {
               letterSpacing: "0.1rem",
             }}
           >
-            <h2 className=" mb-4 text-5xl ">Our Services</h2>
+            <h2 className=" mb-4 text-5xl ">{t("ourServices")}</h2>
             <p className="text-[#253c3f] max-w-2xl mx-auto">
-              Comprehensive interior design solutions tailored to your needs
+              {t("ourServicesSlogan")}
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8 mb-12">

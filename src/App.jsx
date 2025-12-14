@@ -8,7 +8,7 @@ import ProcessPreview from "./Components/ProcessPreview.jsx";
 import AboutMePreview from "./Components/AboutMePreview.jsx";
 function App() {
   return (
-    <div className="h-screen w-full bg-amber-600 relative">
+    <div className="h-full w-full bg-amber-600 relative">
       <div className="absolute inset-0 flex z-0">
         <div className="w-1/3 bg-[#548780]"></div>
         <div className="w-2/3 bg-[#f5be9e]"></div>

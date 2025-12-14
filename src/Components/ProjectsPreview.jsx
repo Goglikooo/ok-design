@@ -15,31 +15,32 @@ export default function ProjectsPreview() {
   const projects = [
     {
       title: "Vazha-Pshavela",
-      description: "Total Area: 45m²",
+      description: `${t("totalArea")}: 45${t("m")}²`,
       images: [
-        "images/project1/picture2_2.jpg",
-        "images/project1/picture2_1.jpg",
-        "images/project1/picture2_3.jpg",
+        "images/project1/project1_1.jpeg",
+        "images/project1/project1_3.jpeg",
+        "images/project1/project1_2.jpeg",
+        "images/project1/project1_4.jpeg",
       ],
     },
     {
       title: "Elbakidze",
-      description: "Total Area: 35m²",
+      description: `${t("totalArea")}: 35${t("m")}²`,
       images: [
-        "images/project2/picture3_2.jpg",
-        "images/project2/picture3_1.jpg",
-        "images/project2/picture3_3.jpg",
-        "images/project2/picture3_4.jpg",
+        "images/project2/project2_1.jpeg",
+        "images/project2/project2_2.jpeg",
+        "images/project2/project2_3.jpeg",
+        "images/project2/project2_4.jpeg",
       ],
     },
     {
       title: "Saburtalo",
-      description: "Total Area: 42m²",
+      description: `${t("totalArea")}: 42${t("m")}²`,
       images: [
-        "images/project3/picture4_2.jpg",
-        "images/project3/picture4_1.jpg",
-        "images/project3/picture4_3.jpg",
-        "images/project3/picture4_4.jpg",
+        "images/project3/project3_1.jpeg",
+        "images/project3/project3_2.jpeg",
+        "images/project3/project3_3.jpeg",
+        "images/project3/project3_4.jpeg",
       ],
     },
   ];
@@ -63,7 +64,8 @@ export default function ProjectsPreview() {
               effect={"cards"}
               grabCursor={true}
               navigation={true}
-              modules={[Pagination, EffectCards, Navigation]}
+              loop={true}
+              modules={[Pagination, Navigation]}
             >
               {card.images.map((img, index) => (
                 <SwiperSlide key={index}>

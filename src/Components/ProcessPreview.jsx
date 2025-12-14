@@ -34,7 +34,7 @@ export default function ProcessPreview() {
           </div>
           <div className="relative h-96 rounded-lg overflow-hidden shadow-lg hidden lg:block">
             <img
-              src="https://images.unsplash.com/photo-1652246446122-c2221c654aa7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbnRlcmlvciUyMGRlc2lnbmVyJTIwd29ya2luZ3xlbnwxfHx8fDE3NjU2MjA5OTR8MA&ixlib=rb-4.1.0&q=80&w=1080"
+              src="./images/how we work.jpeg"
               alt="Design Process"
               className="w-full h-full object-cover "
             />
