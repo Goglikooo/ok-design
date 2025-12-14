@@ -42,22 +42,12 @@ export default function ProjectsPreview() {
         "images/project3/picture4_4.jpg",
       ],
     },
-    {
-      title: "Saburtalo",
-      description: "Total Area: 42m²",
-      images: [
-        "images/project3/picture4_2.jpg",
-        "images/project3/picture4_1.jpg",
-        "images/project3/picture4_3.jpg",
-        "images/project3/picture4_4.jpg",
-      ],
-    },
   ];
 
   const Cardgenerator = ({ projectsArray }) => {
     return (
       <div
-        className=" grid md:grid-cols-4 gap-5 mb-5 [&_.swiper-button-next]:text-[#548780]!
+        className=" grid md:grid-cols-3 gap-5 mb-5 [&_.swiper-button-next]:text-[#548780]!
     [&_.swiper-button-prev]:text-[#548780]! "
       >
         {projectsArray.map((card, i) => (
@@ -66,7 +56,6 @@ export default function ProjectsPreview() {
             style={{
               border: "3px solid #253c3f",
               backgroundColor: "#f5be9e",
-              boxShadow: "5px 5px 5px black",
             }}
           >
             <Swiper

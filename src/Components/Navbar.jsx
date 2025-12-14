@@ -26,9 +26,8 @@ export default function Navbar() {
 
           {/* Desktop Menu */}
           <div
-            className="hidden md:flex space-x-6 font-extrabold"
+            className="hidden md:flex space-x-6 font-semibold"
             style={{
-              fontFamily: "Cormorant Garamond",
               fontSize: `${language ? "20px" : "17px"}`,
             }}
           >

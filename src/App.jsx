@@ -5,6 +5,7 @@ import Footer from "./Components/Footer.jsx";
 import ServicesPreview from "./Components/ServicesPreview.jsx";
 import ProjectsPreview from "./Components/ProjectsPreview.jsx";
 import ProcessPreview from "./Components/ProcessPreview.jsx";
+import AboutMePreview from "./Components/AboutMePreview.jsx";
 function App() {
   return (
     <div className="h-screen w-full bg-amber-600 relative">
@@ -18,6 +19,7 @@ function App() {
         <ProjectsPreview />
         <ServicesPreview />
         <ProcessPreview />
+        <AboutMePreview />
         <Footer />
       </div>
     </div>
