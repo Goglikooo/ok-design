@@ -16,12 +16,13 @@ export default function LandingPage() {
     <section
       className="
       pt-18
-      pb-10
-      h-full
-      px-4 xl:px-10   text-[#253c3f]  "
+      h-screen
+      px-4 xl:px-5   text-[#253c3f]
+      xl:flex xl:justify-center xl:items-center "
     >
       <div
-        className="shrink max-w-7xl mx-auto   relative
+        className="
+        max-w-7xl mx-auto relative flex flex-col items-center 
     [&_.swiper-button-next]:text-[#548780]!
     [&_.swiper-button-prev]:text-[#548780]!
     [&_.swiper-pagination-bullet]:bg-gray-300! 
@@ -40,7 +41,7 @@ export default function LandingPage() {
             reverseDirection: false,
           }}
           loop={true}
-          className="md:rounded-xl overflow-hidden shadow-lg "
+          className="md:rounded-xl overflow-hidden shadow-lg w-full max-w-full"
         >
           {images.map((img, index) => (
             <SwiperSlide key={index}>
@@ -50,8 +51,8 @@ export default function LandingPage() {
         </Swiper>
 
         <div
-          className="w-full lg:absolute z-1 lg:bottom-0 lg:left-1/2 lg:-translate-x-1/2  flex flex-col gap-5 justify-center items-center
-        lg:bg-[#f5be9e93] pb-3 lg:rounded-b-xl
+          className="w-full  lg:absolute z-1 lg:bottom-0 lg:left-1/2 lg:-translate-x-1/2  flex flex-col gap-3 justify-center items-center
+        lg:bg-[#f5be9e93] pb-3 lg:rounded-b-xl 
         "
         >
           <h1
@@ -73,10 +74,6 @@ export default function LandingPage() {
           </div>
         </div>
       </div>
-      {/* <div className="mt-3 text-center flex  justify-evenly items-center flex-col flex-1 2xl:bg-linear-to-r from-[#f5be9e] to-transparent  ">
-          
-          </div>
-        </div> */}
     </section>
   );
 }
