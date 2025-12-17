@@ -16,47 +16,51 @@ export default function LandingPage() {
     <section
       className="
       pt-18
-   h-screen
-      flex flex-col 
-      relative z-18  px-4   text-[#253c3f] "
+      pb-10
+      h-full
+      px-4 xl:px-10   text-[#253c3f] "
       style={{
         letterSpacing: "0.1rem",
       }}
     >
-      <div className="h-full ">
-        <div
-          className=" md:w-3xl xl:w-6xl
-       max-w-6xl mx-auto shrink 
+      <div
+        className="shrink max-w-7xl mx-auto   relative
     [&_.swiper-button-next]:text-[#548780]!
     [&_.swiper-button-prev]:text-[#548780]!
     [&_.swiper-pagination-bullet]:bg-gray-300! 
     [&_.swiper-pagination-bullet-active]:bg-[#548780]!
     "
+      >
+        <Swiper
+          modules={[Navigation, Pagination, Autoplay]}
+          navigation
+          pagination={{ clickable: true }}
+          spaceBetween={40}
+          slidesPerView={1}
+          autoplay={{
+            delay: 5000,
+            disableOnInteraction: false,
+            reverseDirection: false,
+          }}
+          loop={true}
+          className="md:rounded-xl overflow-hidden shadow-lg "
         >
-          <Swiper
-            modules={[Navigation, Pagination, Autoplay]}
-            navigation
-            pagination={{ clickable: true }}
-            spaceBetween={40}
-            slidesPerView={1}
-            autoplay={{
-              delay: 5000,
-              disableOnInteraction: false,
-              reverseDirection: false,
-            }}
-            loop={true}
-            className="md:rounded-xl overflow-hidden shadow-lg"
-          >
-            {images.map((img, index) => (
-              <SwiperSlide key={index}>
-                <img src={img} className="w-full h-full object-cover" />
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
-        <div className="  text-center flex my-2 justify-around items-center flex-col flex-1">
-          <h1 className="text-4xl ml:text-5xl font-bold ">{t("slogan")}</h1>
-          <p className=" text-1xl md:text-2xl font-semibold ">
+          {images.map((img, index) => (
+            <SwiperSlide key={index}>
+              <img src={img} className="w-full h-full object-cover" />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+
+        <div
+          className="w-full lg:absolute z-1 lg:bottom-0 lg:left-1/2 lg:-translate-x-1/2  flex flex-col gap-5 justify-center items-center
+        lg:bg-[#f5be9e93] pb-3 lg:rounded-b-xl
+        "
+        >
+          <h1 className="text-4xl ml:text-5xl lg:text-5xl font-bold text-center">
+            {t("slogan")}
+          </h1>
+          <p className=" text-1xl md:text-2xl font-semibold text-center">
             {t("sloganAddition")}
           </p>
           <div className="md:flex-row text-[#ffffff] font-bold flex flex-col gap-3 ">
@@ -70,6 +74,10 @@ export default function LandingPage() {
           </div>
         </div>
       </div>
+      {/* <div className="mt-3 text-center flex  justify-evenly items-center flex-col flex-1 2xl:bg-linear-to-r from-[#f5be9e] to-transparent  ">
+          
+          </div>
+        </div> */}
     </section>
   );
 }
