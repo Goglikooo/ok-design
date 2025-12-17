@@ -10,7 +10,7 @@ import { ArrowRight } from "lucide-react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 const images = [MainPicture, SecondPicture, ThirdPicture];
 export default function LandingPage() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   return (
     <section
@@ -18,10 +18,7 @@ export default function LandingPage() {
       pt-18
       pb-10
       h-full
-      px-4 xl:px-10   text-[#253c3f] "
-      style={{
-        letterSpacing: "0.1rem",
-      }}
+      px-4 xl:px-10   text-[#253c3f]  "
     >
       <div
         className="shrink max-w-7xl mx-auto   relative
@@ -57,7 +54,9 @@ export default function LandingPage() {
         lg:bg-[#f5be9e93] pb-3 lg:rounded-b-xl
         "
         >
-          <h1 className="text-4xl ml:text-5xl lg:text-5xl font-bold text-center">
+          <h1
+            className={`pt-4  text-4xl ml:text-5xl lg:text-5xl font-bold text-center tracking-wide `}
+          >
             {t("slogan")}
           </h1>
           <p className=" text-1xl md:text-2xl font-semibold text-center">

@@ -9,10 +9,11 @@ export default function Navbar() {
   const [language, setLanguage] = useState(true);
 
   return (
-    <nav className="bg-[#ea9573] shadow-md text-gray-100 fixed w-full relativ z-25">
+    <nav
+      className={`bg-[#ea9573] shadow-md text-gray-100 fixed w-full relativ z-25 `}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
-          {/* Logo */}
           <div
             className="text-3xl font-bold "
             style={{
@@ -48,10 +49,10 @@ export default function Navbar() {
               className="cursor-pointer text-2xl "
               onClick={() => {
                 setLanguage(!language);
-                i18n.changeLanguage(`${language ? "ge" : "en"}`);
+                i18n.changeLanguage(`${language ? "en" : "ge"}`);
               }}
             >
-              {language ? <Ge /> : <Gb />}
+              {language ? <Gb /> : <Ge />}
             </button>
           </div>
 

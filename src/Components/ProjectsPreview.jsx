@@ -11,7 +11,7 @@ import { Pagination } from "swiper/modules";
 import { EffectCards, Navigation } from "swiper/modules";
 import { useTranslation } from "react-i18next";
 export default function ProjectsPreview() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const projects = [
     {
       title: "Vazha-Pshavela",
@@ -115,7 +115,11 @@ export default function ProjectsPreview() {
           letterSpacing: "0.1rem",
         }}
       >
-        <h2 className="text-4xl pb-5 text-center font-bold text-white">
+        <h2
+          className={`text-4xl pb-5 text-center font-bold text-white ${
+            i18n.language == "ge" ? "font-georgian " : ""
+          }`}
+        >
           {t("ourProjects")}
         </h2>
 

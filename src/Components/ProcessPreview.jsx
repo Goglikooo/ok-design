@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 export default function ProcessPreview() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const processSteps = [
     `${t("initialConsultation")}`,
     `${t("conceptDevelopment")}`,
@@ -15,7 +15,13 @@ export default function ProcessPreview() {
       <div className="max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:px-8 ">
         <div className="grid lg:grid-cols-2 gap-12 items-center ">
           <div>
-            <h2 className="text-5xl font-semibold mb-6">{t("howWeWork")}</h2>
+            <h2
+              className={`text-5xl font-semibold mb-6 ${
+                i18n.language == "ge" ? "font-georgian " : ""
+              }`}
+            >
+              {t("howWeWork")}
+            </h2>
             <p className=" mb-8">{t("howWeWorkFullText")}</p>
             <div className="space-y-3 mb-8">
               {processSteps.map((step, index) => (

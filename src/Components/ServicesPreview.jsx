@@ -1,7 +1,7 @@
 import { ArrowRight, Pen, Key, ClipboardCheck } from "lucide-react";
 import { useTranslation } from "react-i18next";
 export default function ServicesPreview() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const services = [
     {
       icon: Pen,
@@ -32,7 +32,13 @@ export default function ServicesPreview() {
               letterSpacing: "0.1rem",
             }}
           >
-            <h2 className=" mb-4 text-5xl ">{t("ourServices")}</h2>
+            <h2
+              className={` mb-4 text-5xl ${
+                i18n.language == "ge" ? "font-georgian " : ""
+              }`}
+            >
+              {t("ourServices")}
+            </h2>
             <p className="text-[#253c3f] max-w-2xl mx-auto">
               {t("ourServicesSlogan")}
             </p>
