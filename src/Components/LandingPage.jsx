@@ -25,7 +25,7 @@ export default function LandingPage() {
     >
       <div
         className=" 
-        max-w-7xl mx-auto relative flex flex-col items-center xl:m-15 
+        max-w-7xl mx-auto relative flex flex-col items-center xl:m-auto
     [&_.swiper-button-next]:text-[#548780]!
     [&_.swiper-button-prev]:text-[#548780]!
     [&_.swiper-pagination-bullet]:bg-gray-300! 
