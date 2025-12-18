@@ -1,6 +1,3 @@
-import MainPicture from "../assets/Main Picture.jpg";
-import SecondPicture from "../assets/2.jpg";
-import ThirdPicture from "../assets/3.jpg";
 import { useTranslation } from "react-i18next";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -8,7 +5,13 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { ArrowRight } from "lucide-react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
-const images = [MainPicture, SecondPicture, ThirdPicture];
+const images = [
+  "images/hero images/1.jpg",
+  "images/hero images/2.jpg",
+  "images/hero images/3.jpg",
+  "images/hero images/4.jpg",
+  "images/hero images/5.jpg",
+];
 export default function LandingPage() {
   const { t, i18n } = useTranslation();
 
@@ -18,11 +21,11 @@ export default function LandingPage() {
       pt-18
       h-screen
       px-4 xl:px-5   text-[#253c3f]
-      xl:flex xl:justify-center xl:items-center "
+      xl:flex xl:justify-center xl:items-start"
     >
       <div
-        className="
-        max-w-7xl mx-auto relative flex flex-col items-center 
+        className=" 
+        max-w-7xl mx-auto relative flex flex-col items-center xl:m-30 
     [&_.swiper-button-next]:text-[#548780]!
     [&_.swiper-button-prev]:text-[#548780]!
     [&_.swiper-pagination-bullet]:bg-gray-300! 
@@ -51,8 +54,8 @@ export default function LandingPage() {
         </Swiper>
 
         <div
-          className="w-full  lg:absolute z-1 lg:bottom-0 lg:left-1/2 lg:-translate-x-1/2  flex flex-col gap-3 justify-center items-center
-        lg:bg-[#f5be9e93] pb-3 lg:rounded-b-xl 
+          className="w-full  xl:absolute z-1 xl:bottom-0 xl:left-1/2 xl:-translate-x-1/2  flex flex-col gap-3 justify-evenly xl:justify-center items-center
+        xl:bg-[#f5be9e93] pb-3 xl:rounded-b-xl  h-100 xl:h-auto
         "
         >
           <h1
