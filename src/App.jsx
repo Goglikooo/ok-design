@@ -7,6 +7,7 @@ import ProjectsPreview from "./Components/ProjectsPreview.jsx";
 import ProcessPreview from "./Components/ProcessPreview.jsx";
 import AboutMePreview from "./Components/AboutMePreview.jsx";
 import { useTranslation } from "react-i18next";
+import { SECTIONS } from "../sections.config.js";
 function App() {
   const { i18n } = useTranslation();
   return (
@@ -21,12 +22,12 @@ function App() {
         }`}
       >
         <Navbar />
-        <LandingPage />
-        <ProjectsPreview />
-        <ServicesPreview />
-        <ProcessPreview />
-        <AboutMePreview />
-        <Footer />
+        <LandingPage id={SECTIONS.LANDING_PAGE} />
+        <ProjectsPreview id={SECTIONS.PROJECTS} />
+        <ServicesPreview id={SECTIONS.SERVICES} />
+        <ProcessPreview id={SECTIONS.PROCESS} />
+        <AboutMePreview id={SECTIONS.ABOUT_ME} />
+        <Footer id={SECTIONS.CONTACT} />
       </div>
     </div>
   );

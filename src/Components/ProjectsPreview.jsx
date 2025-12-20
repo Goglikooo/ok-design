@@ -1,16 +1,14 @@
 import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
-import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
-import { EffectCards, Navigation } from "swiper/modules";
+import { Navigation } from "swiper/modules";
 import { useTranslation } from "react-i18next";
-export default function ProjectsPreview() {
+export default function ProjectsPreview({ id }) {
   const { t, i18n } = useTranslation();
   const projects = [
     {
@@ -69,7 +67,7 @@ export default function ProjectsPreview() {
             >
               {card.images.map((img, index) => (
                 <SwiperSlide key={index}>
-                  <img src={img} style={{}} />
+                  <img src={img} style={{}} loading="lazy" />
                 </SwiperSlide>
               ))}
             </Swiper>
@@ -106,16 +104,19 @@ export default function ProjectsPreview() {
   };
 
   return (
-    <section className="py-5 bg-[#548780] border-t-[#ea9573] border-t-4">
+    <section
+      className="py-5 bg-[#548780] border-t-[#ea9573] border-t-4 scroll-mt-15.5"
+      id={id}
+    >
       <div
         className="mx-auto px-4 max-w-7xl  [&_.swiper-pagination-bullet-active]:bg-[#548780]!"
         style={{
-          fontFamily: "Cinzel",
           fontOpticalSizing: "auto",
           letterSpacing: "0.1rem",
         }}
       >
         <h2
+          style={{ fontSize: "40px" }}
           className={`text-4xl pb-5 text-center font-bold text-white ${
             i18n.language == "ge" ? "font-georgian " : ""
           }`}

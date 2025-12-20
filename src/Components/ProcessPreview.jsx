@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-export default function ProcessPreview() {
+export default function ProcessPreview({ id }) {
   const { t, i18n } = useTranslation();
   const processSteps = [
     `${t("initialConsultation")}`,
@@ -11,11 +11,15 @@ export default function ProcessPreview() {
     `${t("finalReveal")}`,
   ];
   return (
-    <section className="bg-[#548780] border-t-[#ea9573] border-t-4 text-white">
+    <section
+      id={id}
+      className="bg-[#548780] border-t-[#ea9573] border-t-4 text-white scroll-mt-15.5"
+    >
       <div className="max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:px-8 ">
         <div className="grid lg:grid-cols-2 gap-12 items-center ">
           <div>
             <h2
+              style={{ fontSize: "40px" }}
               className={`text-5xl font-semibold mb-6 ${
                 i18n.language == "ge" ? "font-georgian " : ""
               }`}
@@ -43,6 +47,7 @@ export default function ProcessPreview() {
               src="./images/how we work.jpeg"
               alt="Design Process"
               className="w-full h-full object-cover "
+              loading="lazy"
             />
           </div>
         </div>

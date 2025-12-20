@@ -1,12 +1,16 @@
 import { useTranslation } from "react-i18next";
-export default function AboutMePreview() {
+export default function AboutMePreview({ id }) {
   const { t } = useTranslation();
   return (
-    <section className="bg-[#f5be9e]">
+    <section id={id} className="bg-[#f5be9e] scroll-mt-15.5">
       <div className="max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:px-8  ">
         <div className=" mx-auto grid md:grid-cols-2 gap-5 items-center ">
           <div className=" border-[#254c3f] border-2 shadow-black shadow">
-            <img src="./images/About me/MyPhoto.jpeg" alt="Designer's Photo" />
+            <img
+              src="./images/About me/MyPhoto.jpeg"
+              alt="Designer's Photo"
+              loading="lazy"
+            />
           </div>
           <div className=" ">
             <h2 className="text-5xl font-semibold text-white mb-6">
