@@ -61,7 +61,7 @@ const resources = {
     translation: {
       welcomeMessage: "მოგესალმებათ რეაქთი!",
       homeButton: "მთავარი",
-      aboutButton: "ჩემ შესახებ",
+      aboutButton: "ჩემს შესახებ",
       projectsButton: "პროექტები",
       contactButton: "კონტაქტი",
       getStarted: "პირველი ნაბიჯი",

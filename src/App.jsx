@@ -22,7 +22,7 @@ function App() {
         }`}
       >
         <Navbar />
-        <LandingPage id={SECTIONS.LANDING_PAGE} />
+        <LandingPage id={SECTIONS.HOME} />
         <ProjectsPreview id={SECTIONS.PROJECTS} />
         <ServicesPreview id={SECTIONS.SERVICES} />
         <ProcessPreview id={SECTIONS.PROCESS} />

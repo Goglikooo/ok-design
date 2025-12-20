@@ -1,5 +1,5 @@
 export const SECTIONS = {
-  LANDING_PAGE: "landingPage",
+  HOME: "home",
   PROJECTS: "projects",
   SERVICES: "services",
   PROCESS: "process",

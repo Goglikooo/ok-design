@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Gb, Ge } from "react-flags-select";
-
+import { SECTIONS } from "../../sections.config.js";
 export default function Navbar({ id }) {
   const [isOpen, setIsOpen] = useState(false);
   const { t, i18n } = useTranslation();
@@ -36,17 +36,17 @@ export default function Navbar({ id }) {
               fontSize: `${language ? "20px" : "17px"}`,
             }}
           >
-            <a href="#landingPage" className="hover:text-[#2c2c2c]">
+            <a href={`#${SECTIONS.HOME}`} className="hover:text-[#2c2c2c]">
               {t("homeButton")}
             </a>
-            <a href="#projects" className="hover:text-[#2c2c2c]">
+            <a href={`#${SECTIONS.PROJECTS}`} className="hover:text-[#2c2c2c]">
               {t("projectsButton")}
             </a>
-            <a href="#aboutMe" className="hover:text-[#2c2c2c]">
+            <a href={`#${SECTIONS.ABOUT_ME}`} className="hover:text-[#2c2c2c]">
               {t("aboutButton")}
             </a>
 
-            <a href="#contact" className="hover:text-[#2c2c2c]">
+            <a href={`#${SECTIONS.CONTACT}`} className="hover:text-[#2c2c2c]">
               {t("contactButton")}
             </a>
             <button
@@ -77,26 +77,26 @@ export default function Navbar({ id }) {
           onClick={() => setIsOpen(!isOpen)}
         >
           <a
-            href="#landingPage"
+            href={`#${SECTIONS.HOME}`}
             className="block px-3 py-2 rounded hover:bg-gray-700"
           >
             {t("homeButton")}
           </a>
           <a
-            href="#projects"
+            href={`#${SECTIONS.PROJECTS}`}
             className="block px-3 py-2 rounded hover:bg-gray-700"
           >
             {t("projectsButton")}
           </a>
           <a
-            href="#aboutMe"
+            href={`#${SECTIONS.ABOUT_ME}`}
             className="block px-3 py-2 rounded hover:bg-gray-700"
           >
             {t("aboutButton")}
           </a>
 
           <a
-            href="#contact"
+            href={`#${SECTIONS.CONTACT}`}
             className="block px-3 py-2 rounded hover:bg-gray-700"
           >
             {t("contactButton")}
