@@ -43,10 +43,11 @@ export default function ServicesPreview({ id }) {
             </h2>
           </Reveal>
         </div>
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
-          {services.map((service, index) => (
-            <Reveal key={index}>
+        <Reveal>
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            {services.map((service, index) => (
               <div
+                key={index}
                 className="text-center p-8 bg-[#548780] rounded-lg hover:shadow-md transition-shadow border-[#253c3f] border-4"
                 style={{
                   fontOpticalSizing: "auto",
@@ -60,9 +61,9 @@ export default function ServicesPreview({ id }) {
                 <h3 className="text-white mb-3  ">{service.title}</h3>
                 <p className="text-white ">{service.description}</p>
               </div>
-            </Reveal>
-          ))}
-        </div>
+            ))}
+          </div>
+        </Reveal>
         <div className="text-center">
           <button className="bg-[#ea9573] w-full text-white font-semibold pt-2 pb-2 pl-10 pr-10">
             <span>{t("viewAllServices")}</span>

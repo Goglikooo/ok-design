@@ -1,13 +1,10 @@
 import Navbar from "./Components/Navbar.jsx";
-import LandingPage from "./Components/LandingPage.jsx";
 import "./App.css";
 import Footer from "./Components/Footer.jsx";
-import ServicesPreview from "./Components/ServicesPreview.jsx";
-import ProjectsPreview from "./Components/ProjectsPreview.jsx";
-import ProcessPreview from "./Components/ProcessPreview.jsx";
-import AboutMePreview from "./Components/AboutMePreview.jsx";
 import { useTranslation } from "react-i18next";
 import { SECTIONS } from "../sections.config.js";
+import HomePage from "./Pages/HomePage.jsx";
+
 function App() {
   const { i18n } = useTranslation();
   return (
@@ -22,11 +19,9 @@ function App() {
         }`}
       >
         <Navbar />
-        <LandingPage id={SECTIONS.HOME} />
-        <ProjectsPreview id={SECTIONS.PROJECTS} />
-        <ServicesPreview id={SECTIONS.SERVICES} />
-        <ProcessPreview id={SECTIONS.PROCESS} />
-        <AboutMePreview id={SECTIONS.ABOUT_ME} />
+
+        <HomePage />
+
         <Footer id={SECTIONS.CONTACT} />
       </div>
     </div>

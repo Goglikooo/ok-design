@@ -35,9 +35,11 @@ export default function ProcessPreview({ id }) {
             <div className="space-y-3 mb-8">
               {processSteps.map((step, index) => (
                 <div key={index} className="flex items-center gap-3">
-                  <div className="w-8 h-8 bg-[#253c3f] text-white rounded-full flex items-center justify-center shrink-0">
-                    <Reveal>{index + 1}</Reveal>
-                  </div>
+                  <Reveal>
+                    <div className="w-8 h-8 bg-[#253c3f] text-white rounded-full flex items-center justify-center shrink-0">
+                      {index + 1}
+                    </div>
+                  </Reveal>
                   <Reveal>
                     <span className="text-white">{step}</span>
                   </Reveal>

@@ -44,7 +44,7 @@ export default function LandingPage({ id }) {
       >
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
-          navigation
+          navigation={true}
           pagination={{ clickable: true }}
           spaceBetween={40}
           slidesPerView={1}
@@ -86,7 +86,7 @@ export default function LandingPage({ id }) {
         >
           <Reveal>
             <h1
-              className={`pt-4  text-4xl ml:text-5xl lg:text-5xl font-bold text-center tracking-wide `}
+              className={`pt-4  text-4xl ml:text-5xl lg:text-5xl font-bold text-center tracking-tight`}
             >
               {t("slogan")}
             </h1>
