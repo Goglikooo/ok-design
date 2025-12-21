@@ -94,7 +94,10 @@ export default function Navbar({ id }) {
           >
             {t("servicesButton")}
           </Link>
-          <Link to="/processes" className="hover:text-[#2c2c2c]">
+          <Link
+            to="/processes"
+            className="block px-3 py-2 rounded hover:bg-gray-700"
+          >
             {t("processesButton")}
           </Link>
           <Link
