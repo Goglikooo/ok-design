@@ -6,6 +6,7 @@ import "swiper/css/pagination";
 import { ArrowRight } from "lucide-react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import { SECTIONS } from "../../sections.config";
+import { Reveal } from "../utils/reveal";
 const images = [
   "images/hero images/1.jpg",
   "images/hero images/2.jpg",
@@ -83,29 +84,36 @@ export default function LandingPage({ id }) {
          
         "
         >
-          <h1
-            className={`pt-4  text-4xl ml:text-5xl lg:text-5xl font-bold text-center tracking-wide `}
-          >
-            {t("slogan")}
-          </h1>
-          <p className=" text-1xl md:text-2xl font-semibold text-center">
-            {t("sloganAddition")}
-          </p>
-          <div className="md:flex-row text-[#ffffff] font-bold flex flex-col gap-3 ">
-            <button
-              className="bg-[#ea9573]  rounded-2xl pt-2 pb-2 pl-10 pr-10 flex justify-between align-center cursor-pointer"
-              onClick={() => scrollToSection("projects")}
+          <Reveal>
+            <h1
+              className={`pt-4  text-4xl ml:text-5xl lg:text-5xl font-bold text-center tracking-wide `}
             >
-              {t("projectsButton")} <ArrowRight />
-            </button>
-            <button
-              className="bg-[#ea9573]  rounded-2xl pt-2 pb-2 pl-10 pr-10 font-bold flex justify-between align-center cursor-pointer"
-              onClick={() => scrollToSection(SECTIONS.SERVICES)}
-            >
-              {t("getStarted")}
-              <ArrowRight />
-            </button>
-          </div>
+              {t("slogan")}
+            </h1>
+          </Reveal>
+          <Reveal>
+            <p className=" text-1xl md:text-2xl font-semibold text-center">
+              {t("sloganAddition")}
+            </p>
+          </Reveal>
+          <Reveal>
+            <div className="md:flex-row text-[#ffffff] font-bold flex flex-col gap-3 ">
+              <button
+                className="bg-[#ea9573]  rounded-2xl pt-2 pb-2 pl-10 pr-10 flex justify-between align-center cursor-pointer"
+                onClick={() => scrollToSection("projects")}
+              >
+                {t("projectsButton")} <ArrowRight />
+              </button>
+
+              <button
+                className="bg-[#ea9573]  rounded-2xl pt-2 pb-2 pl-10 pr-10 font-bold flex justify-between align-center cursor-pointer"
+                onClick={() => scrollToSection(SECTIONS.SERVICES)}
+              >
+                {t("getStarted")}
+                <ArrowRight />
+              </button>
+            </div>
+          </Reveal>
         </div>
       </div>
     </section>

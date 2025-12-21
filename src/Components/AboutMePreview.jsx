@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { Reveal } from "../utils/reveal";
 export default function AboutMePreview({ id }) {
   const { t } = useTranslation();
   return (
@@ -12,13 +13,17 @@ export default function AboutMePreview({ id }) {
               loading="lazy"
             />
           </div>
-          <div className=" ">
-            <h2 className="text-5xl font-semibold text-white mb-6">
-              {t("aboutMe")}
-            </h2>
+          <div>
+            <Reveal>
+              <h2 className="text-5xl font-semibold text-white mb-6">
+                {t("aboutMe")}
+              </h2>
+            </Reveal>
             <div className="font-medium tracking-wider mb-8">
-              <p>{t("aboutMeText")}</p>
-              <p className="mt-8">{t("aboutMeTextEnd")}</p>
+              <Reveal>
+                <p>{t("aboutMeText")}</p>
+                <p className="mt-8">{t("aboutMeTextEnd")}</p>
+              </Reveal>
             </div>
             <button className="bg-[#ea9573] w-full text-white font-semibold pt-2 pb-2 pl-10 pr-10">
               <span>{t("contactMe")}</span>

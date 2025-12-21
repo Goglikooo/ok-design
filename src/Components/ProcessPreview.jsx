@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { Reveal } from "../utils/reveal";
 export default function ProcessPreview({ id }) {
   const { t, i18n } = useTranslation();
   const processSteps = [
@@ -18,22 +19,28 @@ export default function ProcessPreview({ id }) {
       <div className="max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:px-8 ">
         <div className="grid lg:grid-cols-2 gap-12 items-center ">
           <div>
-            <h2
-              style={{ fontSize: "40px" }}
-              className={`text-5xl font-semibold mb-6 ${
-                i18n.language == "ge" ? "font-georgian " : ""
-              }`}
-            >
-              {t("howWeWork")}
-            </h2>
-            <p className=" mb-8">{t("howWeWorkFullText")}</p>
+            <Reveal>
+              <h2
+                style={{ fontSize: "40px" }}
+                className={`text-5xl font-semibold mb-6 ${
+                  i18n.language == "ge" ? "font-georgian " : ""
+                }`}
+              >
+                {t("howWeWork")}
+              </h2>
+            </Reveal>
+            <Reveal>
+              <p className=" mb-8">{t("howWeWorkFullText")}</p>
+            </Reveal>
             <div className="space-y-3 mb-8">
               {processSteps.map((step, index) => (
                 <div key={index} className="flex items-center gap-3">
                   <div className="w-8 h-8 bg-[#253c3f] text-white rounded-full flex items-center justify-center shrink-0">
-                    {index + 1}
+                    <Reveal>{index + 1}</Reveal>
                   </div>
-                  <span className="text-white">{step}</span>
+                  <Reveal>
+                    <span className="text-white">{step}</span>
+                  </Reveal>
                 </div>
               ))}
             </div>

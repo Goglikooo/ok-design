@@ -74,7 +74,7 @@ const resources = {
       initialConsultation: "საწყისი კონსულტაცია",
       conceptDevelopment: "კონცეფციის განვითარება",
       _3DVisualization: "3D ვიზუალიზაცია",
-      clientReviewAndRevisions: "რენდერების განხილვა კლიენტთან & დახვეწა",
+      clientReviewAndRevisions: "რენდერების განხილვა კლიენტთან და დახვეწა",
       finalDocumentation: "საბოლოო დოკუმენტაცია",
       implementation: "განხორციელება",
       finalReveal: "საბოლოო წარდგენა",
@@ -85,7 +85,7 @@ const resources = {
       ourServices: "ჩვენი სერვისები",
       ourServicesSlogan:
         "ინტერიერის დიზაინი, რომელიც თქვენს საჭიროებებზეა მორგებული",
-      firstServiceTitle: "დიზაინი & ვიზუალიზაცია",
+      firstServiceTitle: "დიზაინი და ვიზუალიზაცია",
       firstServiceDescription:
         "სრული დიზაინი 3D რენდერებითა და ტექნიკური ნახაზებით",
       secondServiceTitle: 'ე.წ. Turn-Key ("გასაღების") სერვისი',

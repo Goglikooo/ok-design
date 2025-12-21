@@ -8,6 +8,7 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 import { Navigation } from "swiper/modules";
 import { useTranslation } from "react-i18next";
+import { Reveal } from "../utils/reveal";
 export default function ProjectsPreview({ id }) {
   const { t, i18n } = useTranslation();
   const projects = [
@@ -57,45 +58,49 @@ export default function ProjectsPreview({ id }) {
               backgroundColor: "#f5be9e",
             }}
           >
-            <Swiper
-              pagination={true}
-              effect={"cards"}
-              grabCursor={true}
-              navigation={true}
-              loop={true}
-              modules={[Pagination, Navigation]}
-            >
-              {card.images.map((img, index) => (
-                <SwiperSlide key={index}>
-                  <img src={img} style={{}} loading="lazy" />
-                </SwiperSlide>
-              ))}
-            </Swiper>
-
+            <Reveal>
+              <Swiper
+                pagination={true}
+                effect={"cards"}
+                grabCursor={true}
+                navigation={true}
+                loop={true}
+                modules={[Pagination, Navigation]}
+              >
+                {card.images.map((img, index) => (
+                  <SwiperSlide key={index}>
+                    <img src={img} style={{}} loading="lazy" />
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </Reveal>
             <CardContent className="bg-[#f5be9e]  text-white ">
-              <Typography
-                gutterBottom
-                variant="h5"
-                component="div"
-                style={{
-                  fontFamily: "Cinzel",
-                  fontOpticalSizing: "auto",
-                  fontWeight: "600",
-                  letterSpacing: "0.1rem",
-                }}
-              >
-                {card.title}
-              </Typography>
-              <Typography
-                variant="body2"
-                style={{
-                  fontFamily: "Cinzel",
-                  fontOpticalSizing: "auto",
-                  fontWeight: "500",
-                }}
-              >
-                {card.description}
-              </Typography>
+              <Reveal>
+                <Typography
+                  gutterBottom
+                  variant="h5"
+                  component="div"
+                  style={{
+                    fontFamily: "Cinzel",
+                    fontOpticalSizing: "auto",
+                    fontWeight: "600",
+                    letterSpacing: "0.1rem",
+                  }}
+                >
+                  {card.title}
+                </Typography>
+
+                <Typography
+                  variant="body2"
+                  style={{
+                    fontFamily: "Cinzel",
+                    fontOpticalSizing: "auto",
+                    fontWeight: "500",
+                  }}
+                >
+                  {card.description}
+                </Typography>
+              </Reveal>
             </CardContent>
           </Card>
         ))}
@@ -115,15 +120,16 @@ export default function ProjectsPreview({ id }) {
           letterSpacing: "0.1rem",
         }}
       >
-        <h2
-          style={{ fontSize: "40px" }}
-          className={`text-4xl pb-5 text-center font-bold text-white ${
-            i18n.language == "ge" ? "font-georgian " : ""
-          }`}
-        >
-          {t("ourProjects")}
-        </h2>
-
+        <Reveal>
+          <h2
+            style={{ fontSize: "40px" }}
+            className={`text-4xl pb-5 text-center font-bold text-white ${
+              i18n.language == "ge" ? "font-georgian " : ""
+            }`}
+          >
+            {t("ourProjects")}
+          </h2>
+        </Reveal>
         <Cardgenerator projectsArray={projects} />
 
         <button className="bg-[#ea9573]  w-full pt-2 pb-2 pl-10 pr-10 text-white font-semibold">
