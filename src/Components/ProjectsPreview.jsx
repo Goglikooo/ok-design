@@ -9,6 +9,7 @@ import { Pagination } from "swiper/modules";
 import { Navigation } from "swiper/modules";
 import { useTranslation } from "react-i18next";
 import { Reveal } from "../utils/reveal";
+import { Link } from "react-router-dom";
 export default function ProjectsPreview({ id }) {
   const { t, i18n } = useTranslation();
   const projects = [
@@ -132,9 +133,11 @@ export default function ProjectsPreview({ id }) {
         </Reveal>
         <Cardgenerator projectsArray={projects} />
 
-        <button className="bg-[#ea9573]  w-full pt-2 pb-2 pl-10 pr-10 text-white font-semibold">
-          {t("viewAllProjects")}
-        </button>
+        <Link to="/projects">
+          <button className="bg-[#ea9573]  w-full pt-2 pb-2 pl-10 pr-10 text-white font-semibold cursor-pointer">
+            {t("viewAllProjects")}
+          </button>
+        </Link>
       </div>
     </section>
   );

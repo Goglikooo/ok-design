@@ -10,8 +10,9 @@ const resources = {
     translation: {
       welcomeMessage: "Welcome to React and react-i18next",
       homeButton: "Home",
-      aboutButton: "About",
+      servicesButton: "Services",
       projectsButton: "Projects",
+      processesButton: "Workflow",
       contactButton: "Contact",
       getStarted: "Get Started",
       slogan: "Sophisticated interiors for modern living",
@@ -61,8 +62,9 @@ const resources = {
     translation: {
       welcomeMessage: "მოგესალმებათ რეაქთი!",
       homeButton: "მთავარი",
-      aboutButton: "ჩემს შესახებ",
+      servicesButton: "სერვისები",
       projectsButton: "პროექტები",
+      processesButton: "პროცესები",
       contactButton: "კონტაქტი",
       getStarted: "პირველი ნაბიჯი",
       slogan: "თანამედროვე ცხოვრებისთვის შექმნილი დახვეწილი ინტერიერი",

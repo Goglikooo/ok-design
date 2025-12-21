@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Gb, Ge } from "react-flags-select";
 import { SECTIONS } from "../../sections.config.js";
+import { Link } from "react-router-dom";
 export default function Navbar({ id }) {
   const [isOpen, setIsOpen] = useState(false);
   const { t, i18n } = useTranslation();
@@ -21,7 +22,6 @@ export default function Navbar({ id }) {
           <div
             className="text-3xl font-bold "
             style={{
-              fontFamily: "Cinzel",
               fontOpticalSizing: "auto",
               letterSpacing: "0.1rem",
             }}
@@ -31,24 +31,27 @@ export default function Navbar({ id }) {
 
           {/* Desktop Menu */}
           <div
-            className="hidden md:flex space-x-6 font-semibold"
-            style={{
-              fontSize: `${language ? "20px" : "17px"}`,
-            }}
+            className={`hidden md:flex space-x-4 font-semibold text-lg ${
+              i18n.language == "ge" ? "font-georgian " : ""
+            }`}
           >
-            <a href={`#${SECTIONS.HOME}`} className="hover:text-[#2c2c2c]">
+            <Link to="/" className="hover:text-[#2c2c2c]">
               {t("homeButton")}
-            </a>
-            <a href={`#${SECTIONS.PROJECTS}`} className="hover:text-[#2c2c2c]">
-              {t("projectsButton")}
-            </a>
-            <a href={`#${SECTIONS.ABOUT_ME}`} className="hover:text-[#2c2c2c]">
-              {t("aboutButton")}
-            </a>
+            </Link>
 
-            <a href={`#${SECTIONS.CONTACT}`} className="hover:text-[#2c2c2c]">
+            <Link to="/projects" className="hover:text-[#2c2c2c]">
+              {t("projectsButton")}
+            </Link>
+            <Link to="/services" className="hover:text-[#2c2c2c]">
+              {t("servicesButton")}
+            </Link>
+
+            <Link to="/processes" className="hover:text-[#2c2c2c]">
+              {t("processesButton")}
+            </Link>
+            <Link to="/contact" className="hover:text-[#2c2c2c]">
               {t("contactButton")}
-            </a>
+            </Link>
             <button
               className="cursor-pointer text-2xl "
               onClick={languageToggle}
@@ -76,33 +79,32 @@ export default function Navbar({ id }) {
           style={{ fontFamily: "Cormorant Garamond", fontSize: "20px" }}
           onClick={() => setIsOpen(!isOpen)}
         >
-          <a
-            href={`#${SECTIONS.HOME}`}
-            className="block px-3 py-2 rounded hover:bg-gray-700"
-          >
+          <Link to="/" className="block px-3 py-2 rounded hover:bg-gray-700">
             {t("homeButton")}
-          </a>
-          <a
-            href={`#${SECTIONS.PROJECTS}`}
+          </Link>
+          <Link
+            to="/projects"
             className="block px-3 py-2 rounded hover:bg-gray-700"
           >
             {t("projectsButton")}
-          </a>
-          <a
-            href={`#${SECTIONS.ABOUT_ME}`}
+          </Link>
+          <Link
+            to="/services"
             className="block px-3 py-2 rounded hover:bg-gray-700"
           >
-            {t("aboutButton")}
-          </a>
-
-          <a
-            href={`#${SECTIONS.CONTACT}`}
+            {t("servicesButton")}
+          </Link>
+          <Link to="/processes" className="hover:text-[#2c2c2c]">
+            {t("processesButton")}
+          </Link>
+          <Link
+            to="/contact"
             className="block px-3 py-2 rounded hover:bg-gray-700"
           >
             {t("contactButton")}
-          </a>
+          </Link>
           <button
-            className="block px-3 py-2 rounded hover:bg-gray-700 "
+            className="block px-3 py-2 rounded hover:bg-gray-700 w-full cursor-pointer"
             onClick={() => {
               languageToggle();
             }}

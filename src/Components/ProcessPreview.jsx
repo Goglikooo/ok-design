@@ -1,16 +1,10 @@
 import { useTranslation } from "react-i18next";
 import { Reveal } from "../utils/reveal";
+import { processSteps } from "../data/processes.js";
+import { Link } from "react-router-dom";
 export default function ProcessPreview({ id }) {
   const { t, i18n } = useTranslation();
-  const processSteps = [
-    `${t("initialConsultation")}`,
-    `${t("conceptDevelopment")}`,
-    `${t("_3DVisualization")}`,
-    `${t("clientReviewAndRevisions")}`,
-    `${t("finalDocumentation")}`,
-    `${t("implementation")}`,
-    `${t("finalReveal")}`,
-  ];
+
   return (
     <section
       id={id}
@@ -41,15 +35,17 @@ export default function ProcessPreview({ id }) {
                     </div>
                   </Reveal>
                   <Reveal>
-                    <span className="text-white">{step}</span>
+                    <span className="text-white">{t(step)}</span>
                   </Reveal>
                 </div>
               ))}
             </div>
 
-            <button className="bg-[#ea9573] w-full text-white font-semibold pt-2 pb-2 pl-10 pr-10">
-              <span>{t("LearnAboutOurProcess")}</span>
-            </button>
+            <Link to="/processes">
+              <button className="bg-[#ea9573] w-full text-white font-semibold pt-2 pb-2 pl-10 pr-10 cursor-pointer">
+                <span>{t("LearnAboutOurProcess")}</span>
+              </button>
+            </Link>
           </div>
           <div className="relative h-96 rounded-lg overflow-hidden shadow-lg hidden lg:block">
             <img

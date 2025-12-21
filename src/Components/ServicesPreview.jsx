@@ -1,25 +1,9 @@
-import { ArrowRight, Pen, Key, ClipboardCheck } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { Reveal } from "../utils/reveal";
+import { services } from "../data/services.js";
+import { Link } from "react-router-dom";
 export default function ServicesPreview({ id }) {
   const { t, i18n } = useTranslation();
-  const services = [
-    {
-      icon: Pen,
-      title: `${t("firstServiceTitle")}`,
-      description: `${t("firstServiceDescription")}`,
-    },
-    {
-      icon: Key,
-      title: `${t("secondServiceTitle")}`,
-      description: `${t("secondServiceDescription")}`,
-    },
-    {
-      icon: ClipboardCheck,
-      title: `${t("thirdServiceTitle")}`,
-      description: `${t("thirdServiceDescription")}`,
-    },
-  ];
 
   return (
     <section
@@ -58,16 +42,18 @@ export default function ServicesPreview({ id }) {
                   <service.icon className="w-8 h-8" />
                 </div>
 
-                <h3 className="text-white mb-3  ">{service.title}</h3>
-                <p className="text-white ">{service.description}</p>
+                <h3 className="text-white mb-3  ">{t(service.title)}</h3>
+                <p className="text-white ">{t(service.description)}</p>
               </div>
             ))}
           </div>
         </Reveal>
         <div className="text-center">
-          <button className="bg-[#ea9573] w-full text-white font-semibold pt-2 pb-2 pl-10 pr-10">
-            <span>{t("viewAllServices")}</span>
-          </button>
+          <Link to="/services">
+            <button className="bg-[#ea9573] w-full text-white font-semibold pt-2 pb-2 pl-10 pr-10 cursor-pointer">
+              <span>{t("viewAllServices")}</span>
+            </button>
+          </Link>
         </div>
       </div>
     </section>

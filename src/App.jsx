@@ -1,9 +1,9 @@
-import Navbar from "./Components/Navbar.jsx";
+import Navbar from "./components/Navbar.jsx";
 import "./App.css";
-import Footer from "./Components/Footer.jsx";
+import Footer from "./components/Footer.jsx";
 import { useTranslation } from "react-i18next";
 import { SECTIONS } from "../sections.config.js";
-import HomePage from "./Pages/HomePage.jsx";
+import HomePage from "./pages/HomePage.jsx";
 
 function App() {
   const { i18n } = useTranslation();
@@ -19,9 +19,7 @@ function App() {
         }`}
       >
         <Navbar />
-
         <HomePage />
-
         <Footer id={SECTIONS.CONTACT} />
       </div>
     </div>

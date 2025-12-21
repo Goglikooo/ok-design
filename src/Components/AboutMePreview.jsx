@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { Reveal } from "../utils/reveal";
+import { Link } from "react-router-dom";
 export default function AboutMePreview({ id }) {
   const { t } = useTranslation();
   return (
@@ -25,9 +26,11 @@ export default function AboutMePreview({ id }) {
                 <p className="mt-8">{t("aboutMeTextEnd")}</p>
               </Reveal>
             </div>
-            <button className="bg-[#ea9573] w-full text-white font-semibold pt-2 pb-2 pl-10 pr-10">
-              <span>{t("contactMe")}</span>
-            </button>
+            <Link to="/contact">
+              <button className="bg-[#ea9573] w-full text-white font-semibold pt-2 pb-2 pl-10 pr-10 cursor-pointer">
+                <span>{t("contactMe")}</span>
+              </button>
+            </Link>
           </div>
         </div>
       </div>

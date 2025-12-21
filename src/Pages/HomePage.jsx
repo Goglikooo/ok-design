@@ -1,8 +1,8 @@
-import LandingPage from "../Components/LandingPage";
-import ServicesPreview from "../Components/ServicesPreview";
-import ProjectsPreview from "../Components/ProjectsPreview";
-import ProcessPreview from "../Components/ProcessPreview";
-import AboutMePreview from "../Components/AboutMePreview";
+import LandingPage from "../components/LandingPage.jsx";
+import ServicesPreview from "../components/ServicesPreview.jsx";
+import ProjectsPreview from "../components/ProjectsPreview.jsx";
+import ProcessPreview from "../components/ProcessPreview.jsx";
+import AboutMePreview from "../components/AboutMePreview.jsx";
 import { SECTIONS } from "../../sections.config.js";
 
 export default function HomePage() {
