@@ -1,8 +1,8 @@
 import Navbar from "./components/Navbar.jsx";
 import "./App.css";
-import Footer from "./components/Footer.jsx";
+
 import { useTranslation } from "react-i18next";
-import { SECTIONS } from "../sections.config.js";
+
 import HomePage from "./pages/HomePage.jsx";
 
 function App() {
@@ -20,7 +20,6 @@ function App() {
       >
         <Navbar />
         <HomePage />
-        <Footer id={SECTIONS.CONTACT} />
       </div>
     </div>
   );
