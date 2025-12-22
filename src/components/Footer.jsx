@@ -24,12 +24,6 @@ export default function Footer({ id }) {
               >
                 Facebook
               </a>
-              <a href="#" className="hover:text-white transition-colors">
-                Pinterest
-              </a>
-              <a href="#" className="hover:text-white transition-colors">
-                LinkedIn
-              </a>
             </div>
           </div>
         </div>

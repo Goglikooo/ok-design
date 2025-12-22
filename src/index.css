@@ -17,3 +17,8 @@ body {
   font-family: "GeorgianUI", sans-serif;
   font-size: larger;
 }
+
+/* ჰორიზონტალური სქროლი თუ გამოჩნდება ამითი ვიპოვი */
+/* * {
+  outline: 1px solid red;
+} */

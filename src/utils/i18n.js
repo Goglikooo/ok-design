@@ -56,6 +56,22 @@ const resources = {
       contactMe: "Get in Touch",
       contact: "Contact",
       followUs: "Follow Us",
+
+      // Services Page
+      serviceDVSubtitle: "An idea you can see before it becomes reality",
+      serviceDVDescription:
+        "Complete design solutions with 3D renderings and technical drawings",
+      ServiceDVSpacePlanning: "Thoughtful space planning",
+      ServiceDVStyleAtmosphere: "A personalized style and atmosphere",
+      ServiceDVMaterialsFurniture:
+        "Precise selection of materials and furniture",
+      ServiceDV3DVisualizations: "Detailed 3D visualizations",
+      ServiceDVTechnicalDrawings: "Technical drawings for execution",
+
+      serviceDVresult:
+        "Make decisions with confidence, without unnecessary risk.",
+      serviceWhatYouGet: "What You Get",
+      serviceDVresultTitle: "Result",
     },
   },
   ge: {
@@ -90,7 +106,7 @@ const resources = {
       firstServiceTitle: "დიზაინი და ვიზუალიზაცია",
       firstServiceDescription:
         "სრული დიზაინი 3D რენდერებითა და ტექნიკური ნახაზებით",
-      secondServiceTitle: 'ე.წ. Turn-Key ("გასაღების") სერვისი',
+      secondServiceTitle: 'Turn-Key ("გასაღების") სერვისი',
       secondServiceDescription:
         "პროექტის სრული მართვა დასაწყისიდან დასრულებამდე",
       thirdServiceTitle: "სარემონტო სამუშაოების მონიტორინგი",
@@ -105,6 +121,20 @@ const resources = {
       contactMe: "საკონტაქტო ინფორმაცია",
       contact: "კონტაქტი",
       followUs: "სოციალური ქსელები",
+
+      // Services Page
+      serviceDVSubtitle: "იდეა, რომელიც წინასწარ ხედვად იქცევა",
+      serviceDVDescription:
+        "OK Design-ში დიზაინი იწყება შენგან — შენი ცხოვრების სტილიდან, საჭიროებებიდან და სივრცის პოტენციალიდან. ვიზუალიზაციის ეტაპზე შენ უკვე ხედავ საბოლოო შედეგს, სანამ რემონტი დაიწყება.",
+      ServiceDVSpacePlanning: "დიზაინ-პროექტის სრული რეალიზაცია",
+      ServiceDVStyleAtmosphere: "სარემონტო სამუშაოების კოორდინაცია",
+      ServiceDVMaterialsFurniture: "მასალების შერჩევა და შეძენა",
+      ServiceDV3DVisualizations: "ავეჯისა და დეტალების შეკვეთა",
+      ServiceDVTechnicalDrawings: "ხარისხისა და ვადების კონტროლი",
+      serviceDVresult:
+        "დასრულებული სივრცე — მშვიდად და ზედმეტი სტრესის გარეშე.",
+      serviceWhatYouGet: "რას იღებ",
+      serviceDVresultTitle: "შედეგი",
     },
   },
 };
