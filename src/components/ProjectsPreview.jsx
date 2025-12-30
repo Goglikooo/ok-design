@@ -74,7 +74,7 @@ export default function ProjectsPreview({ id }) {
                       src={img}
                       style={{}}
                       loading="lazy"
-                      alt={`${card.title}`}
+                      alt={`Slide ${index + 1}`}
                     />
                   </SwiperSlide>
                 ))}

@@ -57,6 +57,7 @@ export default function Navbar({ id }) {
             <button
               className="cursor-pointer text-2xl "
               onClick={languageToggle}
+              aria-label="Change language"
             >
               {language ? <Gb /> : <Ge />}
             </button>
