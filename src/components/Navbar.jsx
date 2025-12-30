@@ -79,11 +79,13 @@ export default function Navbar({ id }) {
       {isOpen && (
         <Reveal>
           <div
-            className="md:hidden top-0 left-0 w-full bg-[#ea9573] shadow-md text-gray-100 px-2 pt-2 pb-3 space-y-1 text-center"
+            className={`md:hidden top-0 left-0 w-full bg-[#ea9573] shadow-md text-gray-100 px-2 pt-2 pb-3 space-y-1 text-center ${
+              i18n.language == "ge" ? "font-georgian " : ""
+            }`}
             style={{ fontSize: "26px" }}
             onClick={() => setIsOpen(!isOpen)}
           >
-            <Link to="/" className="block px-3 py-2 rounded bg-gray-700">
+            <Link to="/" className="block px-3 py-2 rounded bg-gray-700 ">
               {t("homeButton")}
             </Link>
 
