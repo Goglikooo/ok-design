@@ -70,7 +70,12 @@ export default function ProjectsPreview({ id }) {
               >
                 {card.images.map((img, index) => (
                   <SwiperSlide key={index}>
-                    <img src={img} style={{}} loading="lazy" />
+                    <img
+                      src={img}
+                      style={{}}
+                      loading="lazy"
+                      alt={`${card.title}`}
+                    />
                   </SwiperSlide>
                 ))}
               </Swiper>

@@ -62,6 +62,7 @@ export default function LandingPage({ id }) {
                 src={img}
                 className="w-full h-full object-cover"
                 loading="lazy"
+                alt={`Slide ${index + 1}`}
               />
             </SwiperSlide>
           ))}
