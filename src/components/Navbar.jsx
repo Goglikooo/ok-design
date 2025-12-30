@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Gb, Ge } from "react-flags-select";
-import { SECTIONS } from "../../sections.config.js";
+import { Reveal } from "../utils/reveal";
 import { Link } from "react-router-dom";
 export default function Navbar({ id }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -77,47 +77,54 @@ export default function Navbar({ id }) {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div
-          className="md:hidden  top-0 left-0 w-full bg-[#ea9573] shadow-md text-gray-100 px-2 pt-2 pb-3 space-y-1 "
-          style={{ fontFamily: "Cormorant Garamond", fontSize: "20px" }}
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          <Link to="/" className="block px-3 py-2 rounded hover:bg-gray-700">
-            {t("homeButton")}
-          </Link>
-          <Link
-            to="/projects"
-            className="block px-3 py-2 rounded hover:bg-gray-700"
+        <Reveal>
+          <div
+            className="md:hidden top-0 left-0 w-full bg-[#ea9573] shadow-md text-gray-100 px-2 pt-2 pb-3 space-y-1 text-center"
+            style={{ fontSize: "26px" }}
+            onClick={() => setIsOpen(!isOpen)}
           >
-            {t("projectsButton")}
-          </Link>
-          <Link
-            to="/services"
-            className="block px-3 py-2 rounded hover:bg-gray-700"
-          >
-            {t("servicesButton")}
-          </Link>
-          <Link
-            to="/processes"
-            className="block px-3 py-2 rounded hover:bg-gray-700"
-          >
-            {t("processesButton")}
-          </Link>
-          <Link
-            to="/contact"
-            className="block px-3 py-2 rounded hover:bg-gray-700"
-          >
-            {t("contactButton")}
-          </Link>
-          <button
-            className="block px-3 py-2 rounded hover:bg-gray-700 w-full cursor-pointer"
-            onClick={() => {
-              languageToggle();
-            }}
-          >
-            {language ? <Gb /> : <Ge />}
-          </button>
-        </div>
+            <Link to="/" className="block px-3 py-2 rounded bg-gray-700">
+              {t("homeButton")}
+            </Link>
+
+            <Link
+              to="/projects"
+              className="block px-3 py-2 rounded bg-gray-700"
+            >
+              {t("projectsButton")}
+            </Link>
+
+            <Link
+              to="/services"
+              className="block px-3 py-2 rounded bg-gray-700"
+            >
+              {t("servicesButton")}
+            </Link>
+
+            <Link
+              to="/processes"
+              className="block px-3 py-2 rounded bg-gray-700"
+            >
+              {t("processesButton")}
+            </Link>
+
+            <Link
+              to="/contact"
+              className="block px-3 py-2 rounded bg-gray-700 "
+            >
+              {t("contactButton")}
+            </Link>
+
+            <button
+              className="px-3 py-2 rounded bg-gray-700 w-full cursor-pointer flex justify-center items-center text-2xl "
+              onClick={() => {
+                languageToggle();
+              }}
+            >
+              {language ? <Gb /> : <Ge />}
+            </button>
+          </div>
+        </Reveal>
       )}
     </nav>
   );
