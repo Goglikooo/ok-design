@@ -7,7 +7,7 @@ export default function ServicesElement() {
   const params = useParams();
   const service = servicesExplained[params.serviceId];
   return (
-    <div className="grid xl:grid-cols-2 gap-10 pb-15 text-[#254c3f] md:text-xl xl:text-2xl ">
+    <div className="grid xl:grid-cols-2 gap-10 pb-15 text-[#1D3E33] md:text-xl xl:text-2xl ">
       <div className=" flex flex-col gap-5 ">
         <div>
           <h3 className="text-2xl font-bold">{t(`${service.subtitle}`)}</h3>

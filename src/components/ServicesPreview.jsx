@@ -11,7 +11,7 @@ export default function ServicesPreview({ id }) {
       className="py-8 bg-[#f5be9e] border-t-[#ea9573] border-t-4 scroll-mt-15.5"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
-        <div className="text-center mb-10 text-white font-bold">
+        <div className="text-center mb-10 text-[#1D3E33] font-bold">
           <Reveal>
             <h2
               style={{

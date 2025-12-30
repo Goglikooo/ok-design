@@ -11,7 +11,7 @@ export default function ServicesPage() {
       className={`min-h-screen w-full overflow-x-hidden bg-[#f5be9e] flex flex-col gap-8 
         ${i18n.language == "ge" ? "font-georgian" : ""}`}
     >
-      <h1 className="text-4xl font-bold text-center pt-20  text-amber-50">
+      <h1 className="text-4xl font-bold text-center pt-20 text-[#1D3E33]">
         {t("ourServices")}
       </h1>
 

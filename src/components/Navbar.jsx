@@ -15,7 +15,7 @@ export default function Navbar({ id }) {
   return (
     <nav
       id={id}
-      className={`bg-[#ea9573] shadow-md text-gray-100 fixed w-full relativ z-25 `}
+      className={`bg-[#ea9573] shadow-md text-[#1D3E33] fixed w-full  z-25 `}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
@@ -26,7 +26,9 @@ export default function Navbar({ id }) {
               letterSpacing: "0.1rem",
             }}
           >
-            OK Design
+            <Link to="/" className="hover:text-[#ffffff]">
+              OK Design
+            </Link>
           </div>
 
           {/* Desktop Menu */}
@@ -35,21 +37,21 @@ export default function Navbar({ id }) {
               i18n.language == "ge" ? "font-georgian " : ""
             }`}
           >
-            <Link to="/" className="hover:text-[#2c2c2c]">
+            <Link to="/" className="hover:text-[#ffffff]">
               {t("homeButton")}
             </Link>
 
-            <Link to="/projects" className="hover:text-[#2c2c2c]">
+            <Link to="/projects" className="hover:text-[#ffffff]">
               {t("projectsButton")}
             </Link>
-            <Link to="/services" className="hover:text-[#2c2c2c]">
+            <Link to="/services" className="hover:text-[#ffffff]">
               {t("servicesButton")}
             </Link>
 
-            <Link to="/processes" className="hover:text-[#2c2c2c]">
+            <Link to="/processes" className="hover:text-[#ffffff]">
               {t("processesButton")}
             </Link>
-            <Link to="/contact" className="hover:text-[#2c2c2c]">
+            <Link to="/contact" className="hover:text-[#ffffff]">
               {t("contactButton")}
             </Link>
             <button

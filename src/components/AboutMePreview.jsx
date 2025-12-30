@@ -16,7 +16,7 @@ export default function AboutMePreview({ id }) {
           </div>
           <div>
             <Reveal>
-              <h2 className="text-5xl font-semibold text-white mb-6">
+              <h2 className="text-5xl font-semibold text-[#1D3E33] mb-6">
                 {t("aboutMe")}
               </h2>
             </Reveal>
