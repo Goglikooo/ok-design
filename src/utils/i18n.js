@@ -58,6 +58,7 @@ const resources = {
       followUs: "Follow Us",
 
       // Services Page
+      // - Design and Visualization
       serviceDVSubtitle: "An idea you can see before it becomes reality",
       serviceDVDescription:
         "Complete design solutions with 3D renderings and technical drawings",
@@ -72,6 +73,34 @@ const resources = {
         "Make decisions with confidence, without unnecessary risk.",
       serviceWhatYouGet: "What You Get",
       serviceDVresultTitle: "Result",
+      serviceDVresult:
+        "Make decisions with confidence, without unnecessary risk.",
+      // - Turn-Key Service
+      serviceTKSubtitle: "Full process — one responsible party",
+      serviceTKDescription:
+        "Complete project management from concept to final delivery",
+      ServiceTKSpacePlanning: "Full realization of the design project",
+      ServiceTKStyleAtmosphere: "Coordination of renovation works",
+      ServiceTKMaterialsFurniture: "Selection and purchase of materials",
+      ServiceTK3DVisualizations: "Ordering furniture and finishing elements",
+      ServiceTKTechnicalDrawings: "Quality and timeline control",
+
+      serviceTKresult: "A finished space — delivered calmly and stress-free.",
+      serviceWhatYouGet: "What You Get",
+      serviceTKresultTitle: "Result",
+      serviceTKresult: "A finished space — delivered calmly and stress-free.",
+      // - Renovation Monitoring
+      serviceRMSubtitle: "When the design must be executed exactly as planned",
+      serviceRMDescription:
+        "Details define the outcome. OK Design ensures that construction work follows the approved design and visualizations precisely.",
+      ServiceRMVisits: "Regular on-site visits",
+      ServiceRMWorkControl: "Quality control based on the design project",
+      ServiceRMInstructions: "Clear guidance for contractors",
+      ServiceRMCorrections: "Early detection and correction of issues",
+      ServiceRMChangeManagement:
+        "Management of necessary adjustments during the process",
+      serviceRMresult:
+        "The final result matches exactly what you approved at the start.",
     },
   },
   ge: {
@@ -123,18 +152,43 @@ const resources = {
       followUs: "სოციალური ქსელები",
 
       // Services Page
+      // - Design and Visualization
       serviceDVSubtitle: "იდეა, რომელიც წინასწარ ხედვად იქცევა",
       serviceDVDescription:
         "OK Design-ში დიზაინი იწყება შენგან — შენი ცხოვრების სტილიდან, საჭიროებებიდან და სივრცის პოტენციალიდან. ვიზუალიზაციის ეტაპზე შენ უკვე ხედავ საბოლოო შედეგს, სანამ რემონტი დაიწყება.",
-      ServiceDVSpacePlanning: "დიზაინ-პროექტის სრული რეალიზაცია",
-      ServiceDVStyleAtmosphere: "სარემონტო სამუშაოების კოორდინაცია",
-      ServiceDVMaterialsFurniture: "მასალების შერჩევა და შეძენა",
-      ServiceDV3DVisualizations: "ავეჯისა და დეტალების შეკვეთა",
-      ServiceDVTechnicalDrawings: "ხარისხისა და ვადების კონტროლი",
+      ServiceDVSpacePlanning: "სივრცის გააზრებული დაგეგმვა",
+      ServiceDVStyleAtmosphere: "ინდივიდუალური სტილი და ატმოსფერო",
+      ServiceDVMaterialsFurniture: "მასალებისა და ავეჯის ზუსტი შერჩევა",
+      ServiceDV3DVisualizations: "დეტალური 3D ვიზუალიზაციები",
+      ServiceDVTechnicalDrawings: "სამუშაო ნახაზები რეალური შესრულებისთვის",
       serviceDVresult:
         "დასრულებული სივრცე — მშვიდად და ზედმეტი სტრესის გარეშე.",
       serviceWhatYouGet: "რას იღებ",
       serviceDVresultTitle: "შედეგი",
+      serviceDVresult: "გადაწყვეტილებებს იღებ დარწმუნებით, რისკების გარეშე.",
+      // - Turn-Key Service
+      serviceTKSubtitle: "სრული პროცესი — ერთი პასუხისმგებელი",
+      serviceTKDescription:
+        "თუ გინდა შედეგი, მაგრამ არ გინდა პროცესში ჩაძირვა, Turn-Key სერვისი შენთვისაა. OK Design მართავს ყველაფერს — იდეიდან მზადყოფნაში ჩაბარებამდე.",
+      ServiceTKSpacePlanning: "დიზაინ-პროექტის სრული რეალიზაცია",
+      ServiceTKStyleAtmosphere: "სარემონტო სამუშაოების კოორდინაცია",
+      ServiceTKMaterialsFurniture: "მასალების შერჩევა და შეძენა",
+      ServiceTK3DVisualizations: "ავეჯისა და დეტალების შეკვეთა",
+      ServiceTKTechnicalDrawings: "ხარისხისა და ვადების კონტროლი",
+      serviceTKresult:
+        "დასრულებული სივრცე — მშვიდად და ზედმეტი სტრესის გარეშე.",
+      serviceTKresult: "გადაწყვეტილებებს იღებ დარწმუნებით, რისკების გარეშე.",
+
+      // - Renovation Monitoring
+      serviceRMSubtitle: "როცა დიზაინი ზუსტად უნდა განხორციელდეს",
+      serviceRMDescription:
+        "რემონტის დროს დეტალები წყვეტს ყველაფერს. OK Design უზრუნველყოფს, რომ შესრულება ზუსტად შეესაბამებოდეს დამტკიცებულ დიზაინსა და ვიზუალიზაციას.",
+      ServiceRMVisits: "ობიექტზე რეგულარული ვიზიტები",
+      ServiceRMWorkControl: "სამუშაოების კონტროლი პროექტის მიხედვით",
+      ServiceRMInstructions: "ხელოსნებისთვის დეტალური მითითებები",
+      ServiceRMCorrections: "შეცდომების დროული კორექცია",
+      ServiceRMChangeManagement: "ცვლილებების მართვა პროცესში",
+      serviceRMresult: "საბოლოო შედეგი ისეთივეა, როგორსაც თავიდან ხედავდი.",
     },
   },
 };
