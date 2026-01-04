@@ -8,10 +8,10 @@ export default function ServicesPage() {
   const params = useParams();
   return (
     <div
-      className={`min-h-screen w-full overflow-x-hidden bg-[#f5be9e] flex flex-col gap-8 
+      className={`min-h-screen w-full overflow-x-hidden bg-[#548780] border-b-3 border-[#ea9573] flex flex-col gap-8 
         ${i18n.language == "ge" ? "font-georgian" : ""}`}
     >
-      <h1 className="text-4xl font-bold text-center pt-20 text-[#1D3E33]">
+      <h1 className="text-4xl font-bold text-center pt-20 text-white">
         {t("ourServices")}
       </h1>
 
@@ -22,7 +22,7 @@ export default function ServicesPage() {
             className={` ${
               params.serviceId == index
                 ? "bg-[#55baac] shadow-[#5c5b5b] shadow-lg"
-                : "bg-[#548780] hover:bg-[#69aaa1]"
+                : "bg-[#ea9573] hover:bg-[#f4804e]"
             }   p-3 min-w-0 text-center  text-white rounded-md shadow-md flex justify-center items-center cursor-pointer`}
           >
             <Link to={`/services/${index}`}>
