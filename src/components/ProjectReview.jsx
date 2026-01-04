@@ -21,7 +21,7 @@ export default function ProjectReview() {
       className="fixed inset-0 z-20 bg-red-100 flex items-center justify-center"
     >
       <div
-        className="max-w-7xl mx-auto relative flex flex-col  xl:gap-0 items-center xl:m-auto 
+        className="max-w-7xl w-full flex flex-col items-center gap-4 max-h-[80vh] relative xl:gap-0 xl:m-auto 
     [&_.swiper-button-next]:text-[#548780]!
     [&_.swiper-button-prev]:text-[#548780]!
     [&_.swiper-pagination-bullet]:bg-gray-300! 
@@ -40,13 +40,16 @@ export default function ProjectReview() {
             reverseDirection: false,
           }}
           loop={true}
-          className="md:rounded-xl overflow-hidden shadow-lg w-full max-w-full"
+          className="md:rounded-xl overflow-hidden shadow-lg w-full max-w-full max-h-[80vh]"
         >
           {project.images.map((img, index) => (
-            <SwiperSlide key={index}>
+            <SwiperSlide
+              key={index}
+              className="flex justify-center items-center"
+            >
               <img
                 src={img}
-                className="w-full h-full object-cover"
+                className="w-full max-h-[80vh] object-contain"
                 loading="lazy"
                 alt={`Slide ${index + 1}`}
               />
