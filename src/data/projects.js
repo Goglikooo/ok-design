@@ -1,0 +1,58 @@
+export const projects = [
+  {
+    title: "LisiLakeTkhilnari",
+    description: `170`,
+    images: [
+      "images/project1/project1_1.jpeg",
+      "images/project1/project1_3.jpeg",
+      "images/project1/project1_2.jpeg",
+      "images/project1/project1_4.jpeg",
+    ],
+    services: ["firstServiceTitle"],
+    location: "TbilisiGeorgia",
+  },
+  {
+    title: "Kazbegi",
+    description: `45`,
+    images: [
+      "images/project2/project2_1.jpeg",
+      "images/project2/project2_2.jpeg",
+      "images/project2/project2_3.jpeg",
+      "images/project2/project2_4.jpeg",
+    ],
+    services: ["firstServiceTitle"],
+    location: "TbilisiGeorgia",
+  },
+  {
+    title: "Mirtskhulava",
+    description: `65.5`,
+    images: [
+      "images/project3/project3_1.jpeg",
+      "images/project3/project3_2.jpeg",
+      "images/project3/project3_3.jpeg",
+      "images/project3/project3_4.jpeg",
+    ],
+    services: ["firstServiceTitle"],
+    location: "TbilisiGeorgia",
+  },
+  {
+    title: "Saburtalo",
+    description: `42`,
+    images: [
+      "images/project4/project4_1.jpeg",
+      "images/project4/project4_2.jpeg",
+      "images/project4/project4_3.jpeg",
+      "images/project4/project4_4.jpeg",
+      "images/project4/project4_5.jpeg",
+      "images/project4/project4_6.jpeg",
+      "images/project4/project4_7.jpeg",
+      "images/project4/project4_8.jpeg",
+      "images/project4/project4_9.jpeg",
+      "images/project4/project4_10.jpeg",
+      "images/project4/project4_11.jpeg",
+      "images/project4/project4_13.jpeg",
+    ],
+    services: ["firstServiceTitle"],
+    location: "TbilisiGeorgia",
+  },
+];

@@ -101,6 +101,16 @@ const resources = {
         "Management of necessary adjustments during the process",
       serviceRMresult:
         "The final result matches exactly what you approved at the start.",
+
+      // Adresses
+      LisiLakeTkhilnari: "Lisi Lake",
+      Kazbegi: "Kazbegi Street",
+      Mirtskhulava: "Mirtskhulava Street",
+      Saburtalo: "Saburtalo",
+      TbilisiGeorgia: "Tbilisi, Georgia",
+
+      // square meters abbreviation
+      m2: "m²",
     },
   },
   ge: {
@@ -189,6 +199,16 @@ const resources = {
       ServiceRMCorrections: "შეცდომების დროული კორექცია",
       ServiceRMChangeManagement: "ცვლილებების მართვა პროცესში",
       serviceRMresult: "საბოლოო შედეგი ისეთივეა, როგორსაც თავიდან ხედავდი.",
+
+      // Adresses
+      LisiLakeTkhilnari: "ლისის ტბა",
+      Kazbegi: "ყაზბეგის ქუჩა",
+      Mirtskhulava: "მირცხულავას ქუჩა",
+      Saburtalo: "საბურთალო",
+      TbilisiGeorgia: "თბილისი, საქართველო",
+
+      // square meters abbreviation
+      m2: "მ²",
     },
   },
 };
