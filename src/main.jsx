@@ -15,14 +15,23 @@ import ProjectsPage from "./pages/ProjectsPage.jsx";
 import ContactPage from "./pages/ContactPage.jsx";
 import ProcessesPage from "./pages/ProcessesPage.jsx";
 import ServicesElement from "./components/ServiceInformation.jsx";
-
+import ProjectReview from "./components/ProjectReview.jsx";
 const router = createBrowserRouter([
   {
     element: <MainLayout />,
     errorElement: <NotFoundPage />,
     children: [
       { path: "/", element: <App /> },
-      { path: "/projects", element: <ProjectsPage /> },
+      {
+        path: "/projects",
+        element: <ProjectsPage />,
+        children: [
+          {
+            path: "/projects/:projectId",
+            element: <ProjectReview />,
+          },
+        ],
+      },
       {
         path: "/services/",
         element: <ServicesPage />,
