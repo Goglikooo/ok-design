@@ -34,6 +34,16 @@ export const projects = [
       "/images/project3/project3_2.jpeg",
       "/images/project3/project3_3.jpeg",
       "/images/project3/project3_4.jpeg",
+      "/images/project3/project3_5.jpeg",
+      "/images/project3/project3_6.jpeg",
+      "/images/project3/project3_7.jpeg",
+      "/images/project3/project3_8.jpeg",
+      "/images/project3/project3_9.jpeg",
+      "/images/project3/project3_10.jpeg",
+      "/images/project3/project3_11.jpeg",
+      "/images/project3/project3_12.jpeg",
+      "/images/project3/project3_13.jpeg",
+      "/images/project3/project3_14.jpeg",
     ],
     services: ["firstServiceTitle"],
     location: "TbilisiGeorgia",
@@ -87,7 +97,7 @@ export const projects = [
   },
   {
     id: 6,
-    title: " Alliance Privilege Batumi",
+    title: " Alliance Privilege",
     description: `42`,
     images: [
       "/images/project6/project6_1.jpeg",
@@ -104,10 +114,9 @@ export const projects = [
       "/images/project6/project6_12.jpeg",
       "/images/project6/project6_13.jpeg",
       "/images/project6/project6_14.jpeg",
-      "/images/project6/project6_15.jpeg",
     ],
     services: ["firstServiceTitle"],
-    location: "TbilisiGeorgia",
+    location: "BatumiGeorgia",
   },
   {
     id: 7,
@@ -159,7 +168,7 @@ export const projects = [
   },
   {
     id: 9,
-    title: "Alliance Privilege Batumi 2",
+    title: "Alliance Privilege",
     description: `42`,
     images: [
       "/images/project9/project9_1.jpeg",
@@ -175,9 +184,8 @@ export const projects = [
       "/images/project9/project9_11.jpeg",
       "/images/project9/project9_12.jpeg",
       "/images/project9/project9_13.jpeg",
-      "/images/project9/project9_14.jpeg",
     ],
     services: ["firstServiceTitle"],
-    location: "TbilisiGeorgia",
+    location: "BatumiGeorgia",
   },
 ];

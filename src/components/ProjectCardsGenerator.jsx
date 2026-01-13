@@ -32,7 +32,7 @@ export default function ProjectCardsGenerator({ projectsArray }) {
               loop={true}
               modules={[Pagination, Navigation]}
             >
-              {card.images.map((img, index) => (
+              {card.images.slice(0, 4).map((img, index) => (
                 <SwiperSlide key={index}>
                   <img
                     src={img}

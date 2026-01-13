@@ -206,7 +206,7 @@ const resources = {
       Mirtskhulava: "მირცხულავას ქუჩა",
       Saburtalo: "საბურთალო",
       TbilisiGeorgia: "თბილისი, საქართველო",
-
+      BatumiGeorgia: "ბათუმი, საქართველო",
       // square meters abbreviation
       m2: "მ²",
     },

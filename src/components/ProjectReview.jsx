@@ -1,6 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { Reveal } from "../utils/reveal";
-import { services } from "../data/services.js";
+import { ArrowLeft, CircleX } from "lucide-react";
 import { Link, useParams } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
@@ -18,16 +17,28 @@ export default function ProjectReview() {
   return (
     <section
       id={params.projectId}
-      className="fixed inset-0 z-20 bg-red-100 flex items-center justify-center"
+      className="fixed inset-0 z-20 bg-[#548780] flex items-start justify-center py-18"
     >
       <div
-        className="max-w-7xl w-full flex flex-col items-center gap-4 max-h-[80vh] relative xl:gap-0 xl:m-auto 
+        className="max-w-7xl w-full flex flex-col items-center gap-4 max-h-[90vh] relative xl:gap-0 xl:m-auto 
     [&_.swiper-button-next]:text-[#548780]!
     [&_.swiper-button-prev]:text-[#548780]!
     [&_.swiper-pagination-bullet]:bg-gray-300! 
     [&_.swiper-pagination-bullet-active]:bg-[#548780]!"
       >
-        <Link to="/projects">X</Link>
+        <div className="flex flex-row justify-end w-full px-2">
+          <Link
+            to="/projects"
+            className="group inline-flex items-center justify-end gap-2 text-neutral-100 hover:text-neutral-50 transition-colors "
+          >
+            <span className="text-lg tracking-wide">close</span>
+            <CircleX
+              size={20}
+              className="transition-transform group-hover:scale-110"
+            />
+          </Link>
+        </div>
+
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
           navigation={true}
@@ -50,12 +61,47 @@ export default function ProjectReview() {
               <img
                 src={img}
                 className="w-full max-h-[80vh] object-contain"
-                loading="lazy"
                 alt={`Slide ${index + 1}`}
               />
             </SwiperSlide>
           ))}
         </Swiper>
+        <section className="bg-[#548780] px-6 py-2 md:py-8">
+          {/* Project title */}
+          <h2 className="text-2xl font-semibold tracking-tight text-neutral-50">
+            {t(project.title)}
+          </h2>
+
+          {/* Meta info */}
+          <div className="mt-6 grid grid-cols-2 gap-6 sm:grid-cols-4 border-t border-white/20 pt-6">
+            <div>
+              <p className="text-xs uppercase tracking-wider text-neutral-300">
+                Location
+              </p>
+              <p className="mt-1 text-sm font-medium text-neutral-100">
+                {t(project.location)}
+              </p>
+            </div>
+
+            <div>
+              <p className="text-xs uppercase tracking-wider text-neutral-300">
+                Area
+              </p>
+              <p className="mt-1 text-sm font-medium text-neutral-100">
+                {project.description} m²
+              </p>
+            </div>
+
+            <div>
+              <p className="text-xs uppercase tracking-wider text-neutral-300">
+                Service
+              </p>
+              <p className="mt-1 text-sm font-medium text-neutral-100">
+                {t(project.services)}
+              </p>
+            </div>
+          </div>
+        </section>
       </div>
     </section>
   );
