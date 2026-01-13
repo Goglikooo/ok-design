@@ -24,12 +24,9 @@ const router = createBrowserRouter([
       { path: "/", element: <App /> },
       {
         path: "/projects",
-        element: <ProjectsPage />,
         children: [
-          {
-            path: "/projects/:projectId",
-            element: <ProjectReview />,
-          },
+          { index: true, element: <ProjectsPage /> },
+          { path: ":projectId", element: <ProjectReview /> },
         ],
       },
       {
@@ -38,7 +35,7 @@ const router = createBrowserRouter([
         children: [
           { index: true, element: <Navigate to="/services/0" replace /> },
           {
-            path: "/services/:serviceId",
+            path: ":serviceId",
             element: <ServicesElement />,
           },
         ],

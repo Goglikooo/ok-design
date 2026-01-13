@@ -6,7 +6,6 @@ export default function ProjectsPage() {
   const { t, i18n } = useTranslation();
   return (
     <div className="min-h-screen w-full bg-[#548780] border-b-3 border-[#ea9573]">
-      <Outlet />
       <h1
         className={`text-4xl font-bold text-center pt-20 text-amber-50 lg:transform lg:-translate-x-1/3 lg:translate-y-5  ${
           i18n.language == "ge" ? "font-georgian " : ""

@@ -17,10 +17,10 @@ export default function ProjectReview() {
   return (
     <section
       id={params.projectId}
-      className="fixed inset-0 z-20 bg-[#548780] flex items-start justify-center py-18"
+      className=" bg-[#548780] flex items-start justify-center py-18"
     >
       <div
-        className="max-w-7xl w-full flex flex-col items-center gap-4 max-h-[90vh] relative xl:gap-0 xl:m-auto 
+        className="max-w-7xl w-full flex flex-col items-center gap-4  relative xl:gap-0 xl:m-auto 
     [&_.swiper-button-next]:text-[#548780]!
     [&_.swiper-button-prev]:text-[#548780]!
     [&_.swiper-pagination-bullet]:bg-gray-300! 

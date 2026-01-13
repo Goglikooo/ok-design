@@ -4,7 +4,7 @@ export default function Footer({ id }) {
   return (
     <footer id={id} className="bg-[#548780] text-white py-12 scroll-mt-15.5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-8 py-8  border-t border-b border-[#f5be9e]">
           <div>
             <div className="mb-4 text-2xl">OK Design</div>
             <p>{t("slogan")}</p>
@@ -27,7 +27,7 @@ export default function Footer({ id }) {
             </div>
           </div>
         </div>
-        <div className="mt-8 pt-8 border-t border-[#f5be9e] text-center">
+        <div className="mt-8 pt-8 text-center">
           <p>© 2025 OK Design. All rights reserved.</p>
         </div>
       </div>
