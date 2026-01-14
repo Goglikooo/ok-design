@@ -71,35 +71,35 @@ export default function ProjectReview() {
           ))}
         </Swiper>
         <section className="bg-[#548780] px-4 md:px-20 py-2 md:py-8  w-full max-w-7xl">
-          <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-neutral-50">
+          <h2 className="text-3xl  font-semibold tracking-tight text-neutral-50">
             {t(project.title)}
           </h2>
 
           {/* Meta info */}
           <div className="mt-6 grid grid-cols-2 gap-6 sm:grid-cols-3 border-t border-white/20 pt-6">
             <div>
-              <p className="text-lg md:text-xl uppercase tracking-wider text-neutral-300">
+              <p className="text-lg  uppercase tracking-wider text-neutral-300">
                 {t("Location")}
               </p>
-              <p className="mt-1 text-xl md:text-2xl font-medium text-neutral-100">
+              <p className="mt-1 text-xl  font-medium text-neutral-100">
                 {t(project.location)}
               </p>
             </div>
 
             <div>
-              <p className="text-lg md:text-xl  uppercase tracking-wider text-neutral-300">
+              <p className="text-lg   uppercase tracking-wider text-neutral-300">
                 {t("Area")}
               </p>
-              <p className="mt-1 text-xl md:text-2xl font-medium text-neutral-100">
+              <p className="mt-1 text-xl  font-medium text-neutral-100">
                 {project.description} {t("m2")}
               </p>
             </div>
 
             <div>
-              <p className="text-lg md:text-xl  uppercase tracking-wider text-neutral-300">
+              <p className="text-lg   uppercase tracking-wider text-neutral-300">
                 {t("Services")}
               </p>
-              <p className="mt-1 text-xl md:text-2xl font-medium text-neutral-100">
+              <p className="mt-1 text-xl  font-medium text-neutral-100">
                 {t(project.services)}
               </p>
             </div>
