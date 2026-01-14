@@ -97,7 +97,7 @@ export const projects = [
   },
   {
     id: 6,
-    title: " Alliance Privilege",
+    title: "AlliancePriviledge",
     description: `42`,
     images: [
       "/images/project6/project6_1.jpeg",
@@ -168,7 +168,7 @@ export const projects = [
   },
   {
     id: 9,
-    title: "Alliance Privilege",
+    title: "AlliancePriviledge",
     description: `42`,
     images: [
       "/images/project9/project9_1.jpeg",

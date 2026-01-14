@@ -107,10 +107,18 @@ const resources = {
       Kazbegi: "Kazbegi Street",
       Mirtskhulava: "Mirtskhulava Street",
       Saburtalo: "Saburtalo",
+      AlliancePriviledge: "Alliance Priviledge",
+      Gulripshi: "Gulripshi Street",
+      Shartava: "Shartava Street",
       TbilisiGeorgia: "Tbilisi, Georgia",
-
+      BatumiGeorgia: "Batumi, Georgia",
       // square meters abbreviation
       m2: "m²",
+      //project info example
+      Location: "Location",
+      Area: "Area",
+      Services: "Services",
+      Close: "Close",
     },
   },
   ge: {
@@ -205,10 +213,19 @@ const resources = {
       Kazbegi: "ყაზბეგის ქუჩა",
       Mirtskhulava: "მირცხულავას ქუჩა",
       Saburtalo: "საბურთალო",
+      AlliancePriviledge: "ალიანს ფრივილეჯი",
+      Gulripshi: "გულრიფშის ქუჩა",
+      Shartava: "შარტავას ქუჩა",
       TbilisiGeorgia: "თბილისი, საქართველო",
       BatumiGeorgia: "ბათუმი, საქართველო",
       // square meters abbreviation
       m2: "მ²",
+
+      //project info example
+      Location: "ლოკაცია",
+      Area: "ფართობი",
+      Services: "სერვისები",
+      Close: "დახურვა",
     },
   },
 };
