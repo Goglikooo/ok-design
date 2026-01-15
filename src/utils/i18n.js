@@ -110,10 +110,17 @@ const resources = {
       AlliancePriviledge: "Alliance Priviledge",
       Gulripshi: "Gulripshi Street",
       Shartava: "Shartava Street",
+      Gorgiladze: "Gorgiladze Street",
+      Bakuriani: "Bakuriani",
+      Pirosmani: "Pirosmani Street",
+      //Cities
       TbilisiGeorgia: "Tbilisi, Georgia",
       BatumiGeorgia: "Batumi, Georgia",
+      BakurianiGeorgia: "Bakuriani, Georgia",
+
       // square meters abbreviation
       m2: "m²",
+
       //project info example
       Location: "Location",
       Area: "Area",
@@ -216,8 +223,12 @@ const resources = {
       AlliancePriviledge: "ალიანს ფრივილეჯი",
       Gulripshi: "გულრიფშის ქუჩა",
       Shartava: "შარტავას ქუჩა",
+      Gorgiladze: "გორგილაძის ქუჩა",
+      Bakuriani: "ბაკურიანი",
+      Pirosmani: "ფიროსმანის ქუჩა",
       TbilisiGeorgia: "თბილისი, საქართველო",
       BatumiGeorgia: "ბათუმი, საქართველო",
+      BakurianiGeorgia: "ბაკურიანი, საქართველო",
       // square meters abbreviation
       m2: "მ²",
 
