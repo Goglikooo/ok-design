@@ -1,9 +1,53 @@
 import { useTranslation } from "react-i18next";
+import { ProcessStep } from "../components/ProcessStep.jsx";
+import { steps } from "../data/processesSteps.js";
+
 export default function ProcessesPage() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+
   return (
-    <div className="h-screen w-full bg-[#548780] border-b-3 border-[#ea9573]">
-      <h1 className="text-4xl font-bold text-center pt-20">How We Work</h1>
+    <div
+      className={`min-h-screen w-full bg-[#548780] ${
+        i18n.language === "ge" ? "font-georgian" : ""
+      }`}
+    >
+      {/* Hero Section */}
+      <section className="pt-20 md:pt-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h1 className="text-white text-4xl font-bold mb-4">
+            {t("howWeWork")}
+          </h1>
+        </div>
+      </section>
+
+      {/* Timeline Section */}
+      <section className="py-5 md:py-10">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="space-y-12">
+            {steps.map((step, index) => (
+              <ProcessStep
+                key={index}
+                {...step}
+                isLast={index === steps.length - 1}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-16 md:py-24">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-white mb-4">Ready to Get Started?</h2>
+          <p className="text-white mb-8">
+            Let's begin your design journey together. Schedule a consultation to
+            discuss your project.
+          </p>
+          <button className="bg-[#ea9573] hover:bg-[#f4804e] text-white px-8 py-3 rounded-md  transition-colors cursor-pointer">
+            Book Your Consultation
+          </button>
+        </div>
+      </section>
     </div>
   );
 }

@@ -8,7 +8,7 @@ export default function ServicesPage() {
   const params = useParams();
   return (
     <div
-      className={`min-h-screen w-full overflow-x-hidden bg-[#548780] border-b-3 border-[#ea9573] flex flex-col gap-8 
+      className={`min-h-screen w-full overflow-x-hidden bg-[#548780]  flex flex-col gap-8 
         ${i18n.language == "ge" ? "font-georgian" : ""}`}
     >
       <h1 className="text-4xl font-bold text-center pt-20 text-white">

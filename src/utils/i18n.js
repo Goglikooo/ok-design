@@ -113,6 +113,7 @@ const resources = {
       Gorgiladze: "Gorgiladze Street",
       Bakuriani: "Bakuriani",
       Pirosmani: "Pirosmani Street",
+      GabrielSalosi: "Gabriel Salosi Street",
       //Cities
       TbilisiGeorgia: "Tbilisi, Georgia",
       BatumiGeorgia: "Batumi, Georgia",
@@ -226,6 +227,7 @@ const resources = {
       Gorgiladze: "გორგილაძის ქუჩა",
       Bakuriani: "ბაკურიანი",
       Pirosmani: "ფიროსმანის ქუჩა",
+      GabrielSalosi: "გაბრიელ სალოსის ქუჩა",
       TbilisiGeorgia: "თბილისი, საქართველო",
       BatumiGeorgia: "ბათუმი, საქართველო",
       BakurianiGeorgia: "ბაკურიანი, საქართველო",

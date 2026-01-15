@@ -50,7 +50,7 @@ export const projects = [
   },
   {
     id: 4,
-    title: "Saburtalo",
+    title: "ჩოლოყაშვილის ქუჩა",
     description: `42`,
     images: [
       "/images/project4/project4_1.jpeg",
@@ -222,7 +222,7 @@ export const projects = [
   },
   {
     id: 11,
-    title: "Gldani",
+    title: "French district",
     description: `42`,
     images: [
       "/images/project11/project11_1.jpeg",
@@ -264,7 +264,7 @@ export const projects = [
   },
   {
     id: 12,
-    title: "Isani",
+    title: "GabrielSalosi",
     description: `42`,
     images: [
       "/images/project12/project12_1.jpeg",
