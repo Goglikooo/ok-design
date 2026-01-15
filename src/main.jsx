@@ -17,7 +17,7 @@ import ProcessesPage from "./pages/ProcessesPage.jsx";
 import ServicesElement from "./components/ServiceInformation.jsx";
 import ProjectReview from "./components/ProjectReview.jsx";
 import { SpeedInsights } from "@vercel/speed-insights/react";
-import { Analytics } from "@vercel/analytics/next";
+import { Analytics } from "@vercel/analytics/react";
 const router = createBrowserRouter([
   {
     element: <MainLayout />,
