@@ -50,7 +50,7 @@ export const projects = [
   },
   {
     id: 4,
-    title: "ჩოლოყაშვილის ქუჩა",
+    title: "Cholokashvili",
     description: `42`,
     images: [
       "/images/project4/project4_1.jpeg",
@@ -222,7 +222,7 @@ export const projects = [
   },
   {
     id: 11,
-    title: "French district",
+    title: "FrenchDistrict",
     description: `42`,
     images: [
       "/images/project11/project11_1.jpeg",

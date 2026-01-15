@@ -114,6 +114,8 @@ const resources = {
       Bakuriani: "Bakuriani",
       Pirosmani: "Pirosmani Street",
       GabrielSalosi: "Gabriel Salosi Street",
+      Cholokashvili: "Cholokashvili Street",
+      FrenchDistrict: "French district",
       //Cities
       TbilisiGeorgia: "Tbilisi, Georgia",
       BatumiGeorgia: "Batumi, Georgia",
@@ -127,6 +129,30 @@ const resources = {
       Area: "Area",
       Services: "Services",
       Close: "Close",
+
+      // process steps descriptions
+      initialConsultationDescription:
+        "We start with an in-depth consultation to understand your lifestyle, aesthetic preferences, budget, and project goals. This step defines the vision and scope for the entire design journey.",
+      conceptDevelopmentDescription:
+        "Based on our consultation, we develop a cohesive design concept including space planning, mood boards, and initial layouts. This phase establishes the creative direction of your project.",
+      _3DVisualizationDescription:
+        "We bring the concept to life with photorealistic 3D renderings, allowing you to experience the space before execution. Materials, lighting, and proportions are visualized in detail.",
+      clientReviewAndRevisionsDescription:
+        "You review the proposed design and visuals, and we refine the project based on your feedback. This collaborative process ensures the final design fully reflects your expectations.",
+      finalDocumentationDescription:
+        "Once approved, we prepare detailed technical drawings, specifications, and material schedules required for accurate and efficient execution.",
+      implementationDescription:
+        "Depending on your selected service, we manage the project from start to finish (Turn-Key), provide professional renovation monitoring, or hand over the documentation to your execution team.",
+      finalRevealDescription:
+        "We complete a final walkthrough to ensure every detail meets our standards and yours. Your space is delivered fully realized, refined, and ready to enjoy.",
+
+      //timeframe
+
+      _1or2Hours: "1-2 hours",
+      _1day: "1 day",
+      _3till7Days: "3-7 days",
+      _1till2Weeks: "1-2 weeks",
+      variesOnProject: "Varies by project",
     },
   },
   ge: {
@@ -202,8 +228,7 @@ const resources = {
       ServiceTK3DVisualizations: "ავეჯისა და დეტალების შეკვეთა",
       ServiceTKTechnicalDrawings: "ხარისხისა და ვადების კონტროლი",
       serviceTKresult:
-        "დასრულებული სივრცე — მშვიდად და ზედმეტი სტრესის გარეშე.",
-      serviceTKresult: "გადაწყვეტილებებს იღებ დარწმუნებით, რისკების გარეშე.",
+        "დასრულებული სივრცე — მშვიდად და სტრესის გარეშე ჩაბარებული.",
 
       // - Renovation Monitoring
       serviceRMSubtitle: "როცა დიზაინი ზუსტად უნდა განხორციელდეს",
@@ -227,6 +252,8 @@ const resources = {
       Gorgiladze: "გორგილაძის ქუჩა",
       Bakuriani: "ბაკურიანი",
       Pirosmani: "ფიროსმანის ქუჩა",
+      Cholokashvili: "ჩოლოყაშვილის ქუჩა",
+      FrenchDistrict: "ფრანგული უბანი",
       GabrielSalosi: "გაბრიელ სალოსის ქუჩა",
       TbilisiGeorgia: "თბილისი, საქართველო",
       BatumiGeorgia: "ბათუმი, საქართველო",
@@ -239,6 +266,30 @@ const resources = {
       Area: "ფართობი",
       Services: "სერვისები",
       Close: "დახურვა",
+
+      // process steps descriptions
+      initialConsultationDescription:
+        "პირველ ეტაპზე ვხვდებით ერთმანეთს და დეტალურად ვსაუბრობთ თქვენს საჭიროებებზე, გემოვნებაზე, ბიუჯეტსა და მიზნებზე. აქედან იწყება პროექტის საერთო ხედვის ჩამოყალიბება.",
+      conceptDevelopmentDescription:
+        "მიღებული ინფორმაციის საფუძველზე ვამუშავებთ სივრცის დაგეგმვას, სტილის მიმართულებას და საწყის იდეებს, რომლებიც პროექტის ხასიათს განსაზღვრავს.",
+      _3DVisualizationDescription:
+        "დიზაინის იდეას ვაქცევთ რეალისტურ ვიზუალად, რათა წინასწარ დაინახოთ, როგორი იქნება თქვენი სივრცე — მასალებით, განათებითა და დეტალებით.",
+      clientReviewAndRevisionsDescription:
+        "თქვენი შეფასებისა და კომენტარების მიხედვით დიზაინი იხვეწება, სანამ საბოლოო შედეგი სრულად არ დაემთხვევა თქვენს მოლოდინებს.",
+      finalDocumentationDescription:
+        "დამტკიცებული პროექტის საფუძველზე ვამზადებთ ყველა საჭირო ნახაზსა და დეტალს, რაც რეალიზაციისთვის აუცილებელია.",
+      implementationDescription:
+        "არჩეული სერვისის მიხედვით, ვმართავთ პროექტს სრულად, ვაკვირდებით სარემონტო პროცესს ან გადმოგცემთ სრულ დოკუმენტაციას თქვენს გუნდს.",
+      finalRevealDescription:
+        "სამუშაოების ბოლოს ვამოწმებთ თითოეულ დეტალს და გადმოგცემთ სრულად დასრულებულ, ფუნქციურ და ჰარმონიულ სივრცეს.",
+
+      //timeframe
+
+      _1or2Hours: "1-2 საათი",
+      _1day: "1 დღე",
+      _3till7Days: "3-7 დღე",
+      _1till2Weeks: "1-2 კვირა",
+      variesOnProject: "დამოკიდებულია პროექტზე",
     },
   },
 };

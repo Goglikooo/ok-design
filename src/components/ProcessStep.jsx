@@ -9,7 +9,7 @@ export function ProcessStep({
   image,
   isLast,
 }) {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   return (
     <div className="relative">
@@ -29,10 +29,16 @@ export function ProcessStep({
             <div className="flex-1 pt-2">
               <div className="flex items-center gap-3 mb-2">
                 <Icon className="w-6 h-6 text-white" />
-                <h3 className="text-white text-xl">{t(title)}</h3>
+                <h3 className="text-white text-xl font-semibold">{t(title)}</h3>
               </div>
 
-              <p className="text-white mb-3">{description}</p>
+              <p
+                className={`text-white mb-3 ${
+                  i18n.language == "ge" ? "text-lg" : ""
+                }`}
+              >
+                {t(description)}
+              </p>
 
               <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#ea9573] text-white rounded-full">
                 <svg
@@ -48,7 +54,7 @@ export function ProcessStep({
                     d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
                   />
                 </svg>
-                <span className="">{duration}</span>
+                <span className="text-lg">{t(duration)}</span>
               </div>
             </div>
           </div>
