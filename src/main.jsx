@@ -16,6 +16,7 @@ import ContactPage from "./pages/ContactPage.jsx";
 import ProcessesPage from "./pages/ProcessesPage.jsx";
 import ServicesElement from "./components/ServiceInformation.jsx";
 import ProjectReview from "./components/ProjectReview.jsx";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 const router = createBrowserRouter([
   {
     element: <MainLayout />,
@@ -49,5 +50,6 @@ const router = createBrowserRouter([
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <RouterProvider router={router} />
+    <SpeedInsights />
   </StrictMode>
 );
