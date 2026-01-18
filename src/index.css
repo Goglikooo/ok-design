@@ -10,7 +10,9 @@
 
 body {
   font-family: "Cinzel", sans-serif;
+
   font-optical-sizing: "auto";
+  text-transform: none;
 }
 
 .font-georgian {

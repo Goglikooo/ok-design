@@ -168,7 +168,7 @@ const resources = {
       EmailPlaceholder: "your@email.com",
       Phonenumber: "Phone",
       WorkingHours: "Hours",
-      WorkingPeriod: "Mon-Sat: 11:00 AM - 7:00 PM",
+      WorkingPeriod: "Mo - Sa: 11:00 AM - 7:00 PM",
       SendUsMessage: "Send us a message",
       Name: "Name",
       NamePlaceholder: "Your full name",

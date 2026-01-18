@@ -180,7 +180,7 @@ export default function ContactPage() {
 
                   <div>
                     <label htmlFor="message" className="block  mb-2">
-                      {t("MessageField")}*
+                      {t("MessageField")} *
                     </label>
                     <textarea
                       id="message"
@@ -209,25 +209,25 @@ export default function ContactPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 md:py-24 bg-[#ea9573]">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-white text-center mb-12">{t("FAQ")}</h2>
-          <div className="space-y-6">
+      <section className="py-9 md:py-12 bg-[#ea9573] text-2xl">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 bg-[#548780] text-white py-10 rounded-xl">
+          <h2 className="text-white text-center mb-12 text-3xl">{t("FAQ")}</h2>
+          <div className="space-y-6 ">
             <div className="border-b border-neutral-200 pb-6">
-              <h3 className="text-white mb-2">{t("FirstQuestion")}</h3>
-              <p className="text-white">{t("FirstQuestionAnswer")}</p>
+              <h3 className=" mb-2 text-white  ">{t("FirstQuestion")}</h3>
+              <p className="text-xl">{t("FirstQuestionAnswer")}</p>
             </div>
             <div className="border-b border-neutral-200 pb-6">
-              <h3 className="text-white mb-2">{t("SecondQuestion")}</h3>
-              <p className="text-white">{t("SecondQuestionAnswer")}</p>
+              <h3 className=" mb-2 text-white ">{t("SecondQuestion")}</h3>
+              <p className="text-xl">{t("SecondQuestionAnswer")}</p>
             </div>
             <div className="border-b border-neutral-200 pb-6">
-              <h3 className="text-white mb-2">{t("ThirdQuestion")}</h3>
-              <p className="text-white">{t("ThirdQuestionAnswer")}</p>
+              <h3 className=" mb-2  text-white ">{t("ThirdQuestion")}</h3>
+              <p className="text-xl">{t("ThirdQuestionAnswer")}</p>
             </div>
             <div className="pb-6">
-              <h3 className="text-white mb-2">{t("FourthQuestion")}</h3>
-              <p className="text-white">{t("FourthQuestionAnswer")}</p>
+              <h3 className=" mb-2 text-white ">{t("FourthQuestion")}</h3>
+              <p className="text-xl">{t("FourthQuestionAnswer")}</p>
             </div>
           </div>
         </div>
