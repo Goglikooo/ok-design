@@ -11,6 +11,7 @@ export const projects = [
     ],
     services: ["firstServiceTitle"],
     location: "TbilisiGeorgia",
+    city: "Tbilisi",
   },
   {
     id: 2,
@@ -24,6 +25,7 @@ export const projects = [
     ],
     services: ["firstServiceTitle"],
     location: "TbilisiGeorgia",
+    city: "Tbilisi",
   },
   {
     id: 3,
@@ -47,6 +49,7 @@ export const projects = [
     ],
     services: ["firstServiceTitle"],
     location: "TbilisiGeorgia",
+    city: "Tbilisi",
   },
   {
     id: 4,
@@ -68,6 +71,7 @@ export const projects = [
     ],
     services: ["firstServiceTitle"],
     location: "TbilisiGeorgia",
+    city: "Tbilisi",
   },
   {
     id: 5,
@@ -94,6 +98,7 @@ export const projects = [
     ],
     services: ["firstServiceTitle"],
     location: "TbilisiGeorgia",
+    city: "Tbilisi",
   },
   {
     id: 6,
@@ -117,6 +122,7 @@ export const projects = [
     ],
     services: ["firstServiceTitle"],
     location: "BatumiGeorgia",
+    city: "Batumi",
   },
   {
     id: 7,
@@ -141,6 +147,7 @@ export const projects = [
     ],
     services: ["firstServiceTitle"],
     location: "TbilisiGeorgia",
+    city: "Tbilisi",
   },
   {
     id: 8,
@@ -165,6 +172,7 @@ export const projects = [
     ],
     services: ["firstServiceTitle"],
     location: "TbilisiGeorgia",
+    city: "Tbilisi",
   },
   {
     id: 9,
@@ -187,6 +195,7 @@ export const projects = [
     ],
     services: ["firstServiceTitle"],
     location: "BatumiGeorgia",
+    city: "Batumi",
   },
   {
     id: 10,
@@ -219,6 +228,7 @@ export const projects = [
     ],
     services: ["firstServiceTitle"],
     location: "BatumiGeorgia",
+    city: "Batumi",
   },
   {
     id: 11,
@@ -261,6 +271,7 @@ export const projects = [
     ],
     services: ["firstServiceTitle"],
     location: "TbilisiGeorgia",
+    city: "Tbilisi",
   },
   {
     id: 12,
@@ -285,6 +296,7 @@ export const projects = [
     ],
     services: ["firstServiceTitle"],
     location: "TbilisiGeorgia",
+    city: "Tbilisi",
   },
   {
     id: 13,
@@ -306,7 +318,8 @@ export const projects = [
       "/images/project13/project13_13.jpeg",
     ],
     services: ["firstServiceTitle"],
-    location: "TbilisiGeorgia",
+    location: "BakurianiGeorgia",
+    city: "Bakuriani",
   },
   {
     id: 14,
@@ -331,6 +344,7 @@ export const projects = [
     ],
     services: ["firstServiceTitle"],
     location: "BatumiGeorgia",
+    city: "Batumi",
   },
   {
     id: 15,
@@ -357,5 +371,6 @@ export const projects = [
     ],
     services: ["firstServiceTitle"],
     location: "BatumiGeorgia",
+    city: "Batumi",
   },
 ];

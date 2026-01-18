@@ -20,7 +20,7 @@ const resources = {
         "OK Design delivers high-end design solutions tailored to your lifestyle and vision.",
       ourProjects: "Featured Projects",
       viewAllProjects: "View All Projects",
-      viewAllServices: "View All Services",
+      viewAllServices: "View All Details",
       initialConsultation: "Initial Consultation",
       conceptDevelopment: "Concept Development",
       _3DVisualization: "3D Visualization",
@@ -117,6 +117,9 @@ const resources = {
       Cholokashvili: "Cholokashvili Street",
       FrenchDistrict: "French district",
       //Cities
+      Tbilisi: "Tbilisi",
+      Batumi: "Batumi",
+      Bakuriani: "Bakuriani",
       TbilisiGeorgia: "Tbilisi, Georgia",
       BatumiGeorgia: "Batumi, Georgia",
       BakurianiGeorgia: "Bakuriani, Georgia",
@@ -153,6 +156,46 @@ const resources = {
       _3till7Days: "3-7 days",
       _1till2Weeks: "1-2 weeks",
       variesOnProject: "Varies by project",
+
+      //button
+      contactUs: "Book Your Consultation",
+
+      //contact page
+      contactTitle: "Contact",
+      contactDescription:
+        "Ready to start your design journey? We'd love to hear about your project. Fill out the form below or reach out directly.",
+      Email: "E-Mail",
+      EmailPlaceholder: "your@email.com",
+      Phonenumber: "Phone",
+      WorkingHours: "Hours",
+      WorkingPeriod: "Mon-Sat: 11:00 AM - 7:00 PM",
+      SendUsMessage: "Send us a message",
+      Name: "Name",
+      NamePlaceholder: "Your full name",
+      ServiceInterestedIn: "Service interested in",
+      SelectService: "Select a service",
+      JustConsultation: "Just a Consultation",
+      MessageField: "Message",
+      MessageFieldPlaceholder: "Tell us about your project",
+      SendMessage: "Send message",
+      MessageSentSuccess: "Message sent successfully",
+      WeWillGetBackToYou: "We'll get back to you within 24 hours.",
+
+      //FAQ
+      FAQ: "Frequently Asked Questions",
+      FirstQuestion: "How is the project cost determined?",
+      FirstQuestionAnswer:
+        "The project cost depends on the size of the space, project complexity, selected services, and overall scope. Each project is priced individually after reviewing the details.",
+      SecondQuestion: "How involved do I need to be in the process?",
+      SecondQuestionAnswer:
+        "The process is structured and transparent. All key decisions are approved in advance, and clear visualizations and guidance are provided, minimizing the need for ongoing involvement.",
+      ThirdQuestion: "Do you work remotely in other cities?",
+      ThirdQuestionAnswer:
+        "Yes. OK Design has completed projects remotely in different cities. Planning, visualizations, and coordination are handled online without compromising quality.",
+      FourthQuestion:
+        "At which stages is the designer involved, and when is contact required?",
+      FourthQuestionAnswer:
+        "The designer is actively involved at all key stages. Client contact is required only for decision-making moments — the rest of the process is managed independently by OK Design.",
     },
   },
   ge: {
@@ -169,7 +212,7 @@ const resources = {
         "OK Design გთავაზობთ თქვენს საჭიროებებზე მორგებულ დიზაინს",
       ourProjects: "ჩვენი პროექტები",
       viewAllProjects: "ყველა პროექტის ნახვა",
-      viewAllServices: "ყველა სერვისის ნახვა",
+      viewAllServices: "ყველა სერვისი დეტალურად",
       initialConsultation: "საწყისი კონსულტაცია",
       conceptDevelopment: "კონცეფციის განვითარება",
       _3DVisualization: "3D ვიზუალიზაცია",
@@ -255,6 +298,10 @@ const resources = {
       Cholokashvili: "ჩოლოყაშვილის ქუჩა",
       FrenchDistrict: "ფრანგული უბანი",
       GabrielSalosi: "გაბრიელ სალოსის ქუჩა",
+
+      Tbilisi: "თბილისი",
+      Batumi: "ბათუმი",
+      Bakuriani: "ბაკურიანი",
       TbilisiGeorgia: "თბილისი, საქართველო",
       BatumiGeorgia: "ბათუმი, საქართველო",
       BakurianiGeorgia: "ბაკურიანი, საქართველო",
@@ -279,7 +326,7 @@ const resources = {
       finalDocumentationDescription:
         "დამტკიცებული პროექტის საფუძველზე ვამზადებთ ყველა საჭირო ნახაზსა და დეტალს, რაც რეალიზაციისთვის აუცილებელია.",
       implementationDescription:
-        "არჩეული სერვისის მიხედვით, ვმართავთ პროექტს სრულად, ვაკვირდებით სარემონტო პროცესს ან გადმოგცემთ სრულ დოკუმენტაციას თქვენს გუნდს.",
+        "არჩეული სერვისის მიხედვით, ვმართავთ პროექტს სრულად, ვაკვირდებით სარემონტო პროცესს ან გადმოგცემთ სრულ დოკუმენტაციას.",
       finalRevealDescription:
         "სამუშაოების ბოლოს ვამოწმებთ თითოეულ დეტალს და გადმოგცემთ სრულად დასრულებულ, ფუნქციურ და ჰარმონიულ სივრცეს.",
 
@@ -290,6 +337,45 @@ const resources = {
       _3till7Days: "3-7 დღე",
       _1till2Weeks: "1-2 კვირა",
       variesOnProject: "დამოკიდებულია პროექტზე",
+
+      //button
+      contactUs: "დაჯავშნე კონსულტაცია",
+      //contact page
+      contactTitle: "საკონტაქტო ველი",
+      contactDescription:
+        "თუ მზად ხარ პროცესის დასაწყებად, სიამოვნებით მოვისმენთ თქვენი პროექტის შესახებ. მოგვწერე ფორმის საშუალებით ან დაგვიკავშირდი პირდაპირ",
+      Email: "ელ.ფოსტა",
+      EmailPlaceholder: "your@email.com",
+      Phonenumber: "ტელეფონის ნომერი",
+      WorkingHours: "სამუშაო საათები",
+      WorkingPeriod: "ორშაბათი - შაბათი: 11:00 - 19:00",
+      SendUsMessage: "გამოგვიგზავნე შეტყობინება",
+      Name: "თქვენი სახელი",
+      NamePlaceholder: "სახელი გვარი",
+      ServiceInterestedIn: "აირჩიე სერვისი",
+      SelectService: "სერვისის არჩევა",
+      JustConsultation: "კონსულტაცია",
+      MessageField: "შეტყობინების ველი",
+      MessageFieldPlaceholder: "მოგვიყევი თქვენი პროექტის შესახებ",
+      SendMessage: "შეტყობინების გაგზავნა",
+      MessageSentSuccess: "შეტყობინება წარმატებით გაიგზავნა",
+      WeWillGetBackToYou: "ჩვენ დაგიბრუნდებით პასუხით არაუგვიანეს 24 საათისა",
+
+      //FAQ
+      FAQ: "ხშირად დასმული კითხვები",
+      FirstQuestion: "როგორ განისაზღვრება პროექტის ღირებულება?",
+      FirstQuestionAnswer:
+        "პროექტის ღირებულება დამოკიდებულია სივრცის ზომაზე, პროექტის სირთულეზე, შერჩეულ სერვისზე და სამუშაოს მასშტაბზე. თითოეული პროექტი ფასდება ინდივიდუალურად, დეტალების განხილვის შემდეგ.",
+      SecondQuestion: "რამდენად ჩართული ვიქნები პროცესში?",
+      SecondQuestionAnswer:
+        "მუშაობის პროცესი გამჭვირვალე და სტრუქტურირებულია. ყველა მნიშვნელოვანი გადაწყვეტილება წინასწარ შეთანხმდება, ხოლო პროცესის განმავლობაში იღებთ მკაფიო ვიზუალიზაციებსა და მიმართულებებს, რაც ზედმეტ ჩართულობას არ საჭიროებს.",
+      ThirdQuestion: "მუშაობთ თუ არა დისტანციურად სხვა ქალაქებში?",
+      ThirdQuestionAnswer:
+        "დიახ. OK Design წარმატებით მუშაობს დისტანციურად სხვადასხვა ქალაქში. დაგეგმვა, ვიზუალიზაციები და კოორდინაცია შესაძლებელია ონლაინ, შედეგის ხარისხის დაკარგვის გარეშე.",
+      FourthQuestion:
+        "რა ეტაპზე არის დიზაინერი ჩართული და როდის არის საჭირო კონტაქტი?",
+      FourthQuestionAnswer:
+        "დიზაინერი აქტიურად არის ჩართული ყველა საკვანძო ეტაპზე. კონტაქტი საჭიროა მხოლოდ გადაწყვეტილებების მიღების მომენტებში — დანარჩენ პროცესს OK Design მართავს დამოუკიდებლად.",
     },
   },
 };

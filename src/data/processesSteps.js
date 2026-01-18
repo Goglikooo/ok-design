@@ -15,7 +15,7 @@ export const steps = [
     title: "initialConsultation",
     description: "initialConsultationDescription",
     duration: "_1or2Hours",
-    image: "images/project/project4_1.jpeg",
+    image: "images/project1/project1_1.jpeg",
   },
   {
     number: 2,
