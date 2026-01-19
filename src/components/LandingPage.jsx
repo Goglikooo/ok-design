@@ -7,6 +7,7 @@ import { ArrowRight } from "lucide-react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import { SECTIONS } from "../../sections.config";
 import { Reveal } from "../utils/reveal";
+import { Opacity } from "@mui/icons-material";
 const images = [
   "images/hero images/1.jpg",
   "images/hero images/2.jpg",

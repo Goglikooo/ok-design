@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
-import { Link, Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { projects } from "../data/projects.js";
-
+import { motion } from "framer-motion";
 export default function ProjectsPage() {
   const { t, i18n } = useTranslation();
   return (
@@ -15,9 +15,18 @@ export default function ProjectsPage() {
         {t("ourProjects")}
       </h1>
 
-      <section className="p-4 md:p-8 gap-7 mb-5 grid lg:grid-cols-2 ">
+      <motion.section
+        variants={{
+          hidden: { opacity: 0 },
+          show: { opacity: 1, transition: { staggerChildren: 0.25 } },
+        }}
+        initial="hidden"
+        animate="show"
+        className="p-4 md:p-8 gap-7 mb-5 grid lg:grid-cols-2 "
+      >
         {projects.map((project, index) => (
-          <div
+          <motion.div
+            variants={{ hidden: { opacity: 0 }, show: { opacity: 1 } }}
             className={`relative  cursor-pointer  group ${
               index % 2 === 0 ? "lg:translate-y-10" : "lg:translate-y-0"
             }`}
@@ -29,6 +38,7 @@ export default function ProjectsPage() {
                 alt=""
                 className="transition duration-500 lg:grayscale-30 brightness-70 group-hover:grayscale-0 group-hover:brightness-100 group-hover:scale-102"
               />
+
               <button
                 className={`absolute top-[55%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 text-3xl lg:text-5xl text-white cursor-pointer  ${
                   i18n.language == "ge" ? "font-georgian " : ""
@@ -41,9 +51,9 @@ export default function ProjectsPage() {
                 </span>
               </button>
             </Link>
-          </div>
+          </motion.div>
         ))}
-      </section>
+      </motion.section>
     </div>
   );
 }
