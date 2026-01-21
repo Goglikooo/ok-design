@@ -10,10 +10,17 @@
 
 body {
   font-family: "Cinzel", sans-serif;
-
   font-optical-sizing: "auto";
   text-transform: none;
+  background-color: #ffffff !important;
 }
+
+:root {
+  color-scheme: light;
+}
+
+
+
 
 .font-georgian {
   font-family: "GeorgianUI", sans-serif;
