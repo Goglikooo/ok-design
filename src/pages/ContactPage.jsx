@@ -3,6 +3,7 @@ import { useState } from "react";
 import { MapPin, Send } from "lucide-react";
 import { services } from "../data/services";
 import { contactInfo } from "../data/contactInfo";
+
 export default function ContactPage() {
   const { t, i18n } = useTranslation();
   const [formData, setFormData] = useState({
@@ -13,16 +14,7 @@ export default function ContactPage() {
     message: "",
   });
   const [submitted, setSubmitted] = useState(false);
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Mock form submission
-    setSubmitted(true);
-    setTimeout(() => {
-      setSubmitted(false);
-      setFormData({ name: "", email: "", phone: "", service: "", message: "" });
-    }, 3000);
-  };
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
     setFormData({
@@ -31,18 +23,51 @@ export default function ContactPage() {
     });
   };
 
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      if (res.ok) {
+        setSubmitted(true);
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          service: "",
+          message: "",
+        });
+      } else {
+        const data = await res.json();
+        alert(data.error || "Failed to send message");
+      }
+    } catch (err) {
+      console.error(err);
+      alert("Something went wrong");
+    } finally {
+      setLoading(false);
+      setTimeout(() => setSubmitted(false), 4000);
+    }
+  };
+
   return (
     <div
       className={`min-h-screen w-full bg-[#548780] ${
-        i18n.language == "ge" ? "font-georgian " : ""
+        i18n.language === "ge" ? "font-georgian " : ""
       }`}
-      style={{ fontSize: `${i18n.language == "ge" ? "1.2rem" : "1rem"}` }}
+      style={{ fontSize: `${i18n.language === "ge" ? "1.2rem" : "1rem"}` }}
     >
       {/* Hero Section */}
-      <section className=" pt-18 md:pt-24">
+      <section className="pt-18 md:pt-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-white text-3xl mb-4">{t("contactTitle")}</h1>
-          <p className="text-white max-w-2xl  mx-auto">
+          <p className="text-white max-w-2xl mx-auto">
             {t("contactDescription")}
           </p>
         </div>
@@ -64,7 +89,7 @@ export default function ContactPage() {
                       <h3 className="text-white mb-1">{t(info.title)}</h3>
                       {info.link ? (
                         <a
-                          href={t(info.link)}
+                          href={info.link}
                           className="text-white hover:text-neutral-900 transition-colors"
                         >
                           {t(info.detail)}
@@ -92,7 +117,7 @@ export default function ContactPage() {
 
             {/* Contact Form */}
             <div className="bg-[#253c3f] text-white p-8 rounded-lg shadow-sm">
-              <h2 className=" mb-6">{t("SendUsMessage")}</h2>
+              <h2 className="mb-6">{t("SendUsMessage")}</h2>
 
               {submitted ? (
                 <div className="bg-green-50 border border-green-200 text-green-800 px-6 py-4 rounded-lg text-center">
@@ -104,8 +129,9 @@ export default function ContactPage() {
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-6">
+                  {/* Name */}
                   <div>
-                    <label htmlFor="name" className="block  mb-2">
+                    <label htmlFor="name" className="block mb-2">
                       {t("Name")} *
                     </label>
                     <input
@@ -116,12 +142,13 @@ export default function ContactPage() {
                       value={formData.name}
                       onChange={handleChange}
                       className="w-full px-4 py-3 border border-neutral-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#f4804e]"
-                      placeholder={`${t("NamePlaceholder")}`}
+                      placeholder={t("NamePlaceholder")}
                     />
                   </div>
 
+                  {/* Email */}
                   <div>
-                    <label htmlFor="email" className="block  mb-2">
+                    <label htmlFor="email" className="block mb-2">
                       {t("Email")} *
                     </label>
                     <input
@@ -136,8 +163,9 @@ export default function ContactPage() {
                     />
                   </div>
 
+                  {/* Phone */}
                   <div>
-                    <label htmlFor="phone" className="block  mb-2">
+                    <label htmlFor="phone" className="block mb-2">
                       {t("Phonenumber")}
                     </label>
                     <input
@@ -151,8 +179,9 @@ export default function ContactPage() {
                     />
                   </div>
 
+                  {/* Service */}
                   <div>
-                    <label htmlFor="service" className="block  mb-2 ">
+                    <label htmlFor="service" className="block mb-2">
                       {t("ServiceInterestedIn")} *
                     </label>
                     <select
@@ -161,25 +190,23 @@ export default function ContactPage() {
                       required
                       value={formData.service}
                       onChange={handleChange}
-                      className="bg-[#253c3f] w-full px-4 py-3 border  border-neutral-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#f4804e]"
+                      className="bg-[#253c3f] w-full px-4 py-3 border border-neutral-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#f4804e]"
                     >
                       <option value="">{t("SelectService")}</option>
-                      {services.map((item, index) => {
-                        return (
-                          <option value={item.title} key={index}>
-                            {t(item.title)}
-                          </option>
-                        );
-                      })}
-
+                      {services.map((item, index) => (
+                        <option value={item.title} key={index}>
+                          {t(item.title)}
+                        </option>
+                      ))}
                       <option value="consultation">
                         {t("JustConsultation")}
                       </option>
                     </select>
                   </div>
 
+                  {/* Message */}
                   <div>
-                    <label htmlFor="message" className="block  mb-2">
+                    <label htmlFor="message" className="block mb-2">
                       {t("MessageField")} *
                     </label>
                     <textarea
@@ -190,16 +217,17 @@ export default function ContactPage() {
                       onChange={handleChange}
                       rows={5}
                       className="w-full px-4 py-3 border border-neutral-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#f4804e] resize-none"
-                      placeholder={`${t("MessageFieldPlaceholder")}*`}
+                      placeholder={t("MessageFieldPlaceholder")}
                     />
                   </div>
 
                   <button
                     type="submit"
+                    disabled={loading}
                     className="w-full bg-[#ea9573] text-white py-3 rounded-md hover:bg-[#f4804e] cursor-pointer transition-colors flex items-center justify-center gap-2"
                   >
-                    <Send className="w-5 h-5" />
-                    <span>{t("SendMessage")}</span>
+                    <Send className="w-5 h-5 animate-pulse" />
+                    <span>{loading ? t("Sending") : t("SendMessage")}</span>
                   </button>
                 </form>
               )}
@@ -212,21 +240,21 @@ export default function ContactPage() {
       <section className="py-9 md:py-12 bg-[#ea9573] text-2xl">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 bg-[#548780] text-white py-10 rounded-xl">
           <h2 className="text-white text-center mb-12 text-3xl">{t("FAQ")}</h2>
-          <div className="space-y-6 ">
+          <div className="space-y-6">
             <div className="border-b border-neutral-200 pb-6">
-              <h3 className=" mb-2 text-white  ">{t("FirstQuestion")}</h3>
+              <h3 className="mb-2 text-white">{t("FirstQuestion")}</h3>
               <p className="text-xl">{t("FirstQuestionAnswer")}</p>
             </div>
             <div className="border-b border-neutral-200 pb-6">
-              <h3 className=" mb-2 text-white ">{t("SecondQuestion")}</h3>
+              <h3 className="mb-2 text-white">{t("SecondQuestion")}</h3>
               <p className="text-xl">{t("SecondQuestionAnswer")}</p>
             </div>
             <div className="border-b border-neutral-200 pb-6">
-              <h3 className=" mb-2  text-white ">{t("ThirdQuestion")}</h3>
+              <h3 className="mb-2 text-white">{t("ThirdQuestion")}</h3>
               <p className="text-xl">{t("ThirdQuestionAnswer")}</p>
             </div>
             <div className="pb-6">
-              <h3 className=" mb-2 text-white ">{t("FourthQuestion")}</h3>
+              <h3 className="mb-2 text-white">{t("FourthQuestion")}</h3>
               <p className="text-xl">{t("FourthQuestionAnswer")}</p>
             </div>
           </div>

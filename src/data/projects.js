@@ -2,7 +2,7 @@ export const projects = [
   {
     id: 1,
     title: "LisiLakeTkhilnari",
-    description: `170`,
+    description: `200`,
     images: [
       "/images/project1/project1_1.jpeg",
       "/images/project1/project1_3.jpeg",
@@ -16,7 +16,7 @@ export const projects = [
   {
     id: 2,
     title: "Kazbegi",
-    description: `45`,
+    description: `55`,
     images: [
       "/images/project2/project2_1.jpeg",
       "/images/project2/project2_2.jpeg",
@@ -30,7 +30,7 @@ export const projects = [
   {
     id: 3,
     title: "Mirtskhulava",
-    description: `65.5`,
+    description: `55`,
     images: [
       "/images/project3/project3_1.jpeg",
       "/images/project3/project3_2.jpeg",
@@ -54,7 +54,7 @@ export const projects = [
   {
     id: 4,
     title: "Cholokashvili",
-    description: `42`,
+    description: `60`,
     images: [
       "/images/project4/project4_1.jpeg",
       "/images/project4/project4_2.jpeg",
@@ -76,7 +76,7 @@ export const projects = [
   {
     id: 5,
     title: "Mirtskhulava",
-    description: `42`,
+    description: `70`,
     images: [
       "/images/project5/project5_1.jpeg",
       "/images/project5/project5_2.jpeg",
@@ -103,7 +103,7 @@ export const projects = [
   {
     id: 6,
     title: "AlliancePriviledge",
-    description: `42`,
+    description: `70`,
     images: [
       "/images/project6/project6_1.jpeg",
       "/images/project6/project6_2.jpeg",
@@ -127,7 +127,7 @@ export const projects = [
   {
     id: 7,
     title: "Gulripshi",
-    description: `42`,
+    description: `90`,
     images: [
       "/images/project7/project7_1.jpeg",
       "/images/project7/project7_2.jpeg",
@@ -152,7 +152,7 @@ export const projects = [
   {
     id: 8,
     title: "Shartava",
-    description: `42`,
+    description: `70`,
     images: [
       "/images/project8/project8_1.jpeg",
       "/images/project8/project8_2.jpeg",
@@ -177,7 +177,7 @@ export const projects = [
   {
     id: 9,
     title: "AlliancePriviledge",
-    description: `42`,
+    description: `35`,
     images: [
       "/images/project9/project9_1.jpeg",
       "/images/project9/project9_2.jpeg",
@@ -200,7 +200,7 @@ export const projects = [
   {
     id: 10,
     title: "Gorgiladze",
-    description: `42`,
+    description: `51`,
     images: [
       "/images/project10/project10_1.jpeg",
       "/images/project10/project10_2.jpeg",
@@ -233,7 +233,7 @@ export const projects = [
   {
     id: 11,
     title: "FrenchDistrict",
-    description: `42`,
+    description: `70`,
     images: [
       "/images/project11/project11_1.jpeg",
       "/images/project11/project11_2.jpeg",
@@ -276,7 +276,7 @@ export const projects = [
   {
     id: 12,
     title: "GabrielSalosi",
-    description: `42`,
+    description: `75`,
     images: [
       "/images/project12/project12_1.jpeg",
       "/images/project12/project12_2.jpeg",
@@ -300,8 +300,8 @@ export const projects = [
   },
   {
     id: 13,
-    title: "Bakuriani",
-    description: `42`,
+    title: "Gudauri",
+    description: `35`,
     images: [
       "/images/project13/project13_1.jpeg",
       "/images/project13/project13_2.jpeg",
@@ -318,13 +318,13 @@ export const projects = [
       "/images/project13/project13_13.jpeg",
     ],
     services: ["firstServiceTitle"],
-    location: "BakurianiGeorgia",
-    city: "Bakuriani",
+    location: "GudauriGeorgia",
+    city: "Gudauri",
   },
   {
     id: 14,
     title: "Pirosmani",
-    description: `42`,
+    description: `40`,
     images: [
       "/images/project14/project14_1.jpeg",
       "/images/project14/project14_2.jpeg",
@@ -349,7 +349,7 @@ export const projects = [
   {
     id: 15,
     title: "Shartava",
-    description: `42`,
+    description: `50`,
     images: [
       "/images/project15/project15_1.jpeg",
       "/images/project15/project15_2.jpeg",

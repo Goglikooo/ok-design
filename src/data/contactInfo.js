@@ -11,7 +11,7 @@ export const contactInfo = [
     icon: Phone,
     title: "Phonenumber",
     detail: "+995 514 257 257",
-    link: "tel:+15551234567",
+    link: "tel:+995514257257",
   },
 
   {

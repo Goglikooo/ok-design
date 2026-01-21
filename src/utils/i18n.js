@@ -103,7 +103,7 @@ const resources = {
         "The final result matches exactly what you approved at the start.",
 
       // Adresses
-      LisiLakeTkhilnari: "Lisi Lake",
+      LisiLakeTkhilnari: "Lisi Tkhinvala",
       Kazbegi: "Kazbegi Street",
       Mirtskhulava: "Mirtskhulava Street",
       Saburtalo: "Saburtalo",
@@ -111,7 +111,6 @@ const resources = {
       Gulripshi: "Gulripshi Street",
       Shartava: "Shartava Street",
       Gorgiladze: "Gorgiladze Street",
-      Bakuriani: "Bakuriani",
       Pirosmani: "Pirosmani Street",
       GabrielSalosi: "Gabriel Salosi Street",
       Cholokashvili: "Cholokashvili Street",
@@ -119,10 +118,10 @@ const resources = {
       //Cities
       Tbilisi: "Tbilisi",
       Batumi: "Batumi",
-      Bakuriani: "Bakuriani",
+      Gudauri: "Gudauri",
       TbilisiGeorgia: "Tbilisi, Georgia",
       BatumiGeorgia: "Batumi, Georgia",
-      BakurianiGeorgia: "Bakuriani, Georgia",
+      GudauriGeorgia: "Gudauri, Georgia",
 
       // square meters abbreviation
       m2: "m²",
@@ -285,7 +284,7 @@ const resources = {
       serviceRMresult: "საბოლოო შედეგი ისეთივეა, როგორსაც თავიდან ხედავდი.",
 
       // Adresses
-      LisiLakeTkhilnari: "ლისის ტბა",
+      LisiLakeTkhilnari: "ლისი თხინვალა",
       Kazbegi: "ყაზბეგის ქუჩა",
       Mirtskhulava: "მირცხულავას ქუჩა",
       Saburtalo: "საბურთალო",
@@ -293,7 +292,7 @@ const resources = {
       Gulripshi: "გულრიფშის ქუჩა",
       Shartava: "შარტავას ქუჩა",
       Gorgiladze: "გორგილაძის ქუჩა",
-      Bakuriani: "ბაკურიანი",
+
       Pirosmani: "ფიროსმანის ქუჩა",
       Cholokashvili: "ჩოლოყაშვილის ქუჩა",
       FrenchDistrict: "ფრანგული უბანი",
@@ -301,10 +300,10 @@ const resources = {
 
       Tbilisi: "თბილისი",
       Batumi: "ბათუმი",
-      Bakuriani: "ბაკურიანი",
+      Gudauri: "გუდაური",
       TbilisiGeorgia: "თბილისი, საქართველო",
       BatumiGeorgia: "ბათუმი, საქართველო",
-      BakurianiGeorgia: "ბაკურიანი, საქართველო",
+      GudauriGeorgia: "გუდაური, საქართველო",
       // square meters abbreviation
       m2: "მ²",
 
