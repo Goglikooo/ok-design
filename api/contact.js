@@ -1,9 +1,6 @@
 import nodemailer from "nodemailer";
-import { useTranslation } from "react-i18next";
 
 export default async function handler(req, res) {
-  const { t } = useTranslation();
-
   try {
     if (req.method !== "POST") {
       return res.status(405).json({ error: "Method not allowed" });
