@@ -29,12 +29,12 @@ export default async function handler(req, res) {
       from: `"${name}" <support@okdesign.ge>`,
       to: process.env.ZOHO_EMAIL,
       replyTo: email,
-      subject: `Contact Form: ${t(service)}`,
+      subject: `Contact Form: ${service}`,
       text: `
 Name: ${name}
 Email: ${email}
 Phone: ${phone || "N/A"}
-Service: ${t(service)}
+Service: ${service}
 Message:
 ${message}`,
     });
