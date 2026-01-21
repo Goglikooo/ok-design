@@ -4,8 +4,8 @@ export const contactInfo = [
   {
     icon: Mail,
     title: "Email",
-    detail: "info@okdesign.ge",
-    link: "mailto:info@okdesign.ge",
+    detail: "contact@okdesign.ge",
+    link: "mailto:contact@okdesign.ge",
   },
   {
     icon: Phone,
