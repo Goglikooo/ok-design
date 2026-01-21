@@ -1,5 +1,9 @@
 import nodemailer from "nodemailer";
+import { useTranslation } from "react-i18next";
+
 export default async function handler(req, res) {
+  const { t } = useTranslation();
+
   try {
     if (req.method !== "POST") {
       return res.status(405).json({ error: "Method not allowed" });
@@ -25,12 +29,12 @@ export default async function handler(req, res) {
       from: `"${name}" <support@okdesign.ge>`,
       to: process.env.ZOHO_EMAIL,
       replyTo: email,
-      subject: `Contact Form: ${service}`,
+      subject: `Contact Form: ${t(service)}`,
       text: `
 Name: ${name}
 Email: ${email}
 Phone: ${phone || "N/A"}
-Service: ${service}
+Service: ${t(service)}
 Message:
 ${message}`,
     });
