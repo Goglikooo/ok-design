@@ -22,7 +22,7 @@ export default async function handler(req, res) {
     });
 
     await transporter.sendMail({
-      from: `"${name}" <info@okdesign.ge>`,
+      from: `"${name}" <support@okdesign.ge>`,
       to: process.env.ZOHO_EMAIL,
       replyTo: email,
       subject: `Contact Form: ${service}`,
