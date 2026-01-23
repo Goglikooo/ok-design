@@ -22,7 +22,7 @@ export default function Footer({ id }) {
           </div>
           <div>
             <h3 className="mb-4 text-2xl">{t("contact")}</h3>
-            <a href="mailto:info@okdesign.ge">contact@okdesign.ge</a>
+            <a href="mailto:info@okdesign.ge">info@okdesign.ge</a>
             <p>+995 514 257 257</p>
           </div>
           <div>
