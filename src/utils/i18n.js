@@ -14,7 +14,7 @@ const resources = {
       projectsButton: "Projects",
       processesButton: "Workflow",
       contactButton: "Contact",
-      getStarted: "Get Started",
+      getStarted: "get in touch",
       slogan: "Sophisticated interiors for modern living",
       sloganAddition:
         "OK Design delivers high-end design solutions tailored to your lifestyle and vision.",
@@ -207,7 +207,7 @@ const resources = {
       projectsButton: "პროექტები",
       processesButton: "პროცესები",
       contactButton: "კონტაქტი",
-      getStarted: "პირველი ნაბიჯი",
+      getStarted: "დაგვიკავშირდი",
       slogan: "თანამედროვე ცხოვრებისთვის შექმნილი დახვეწილი ინტერიერი",
       sloganAddition:
         "OK Design გთავაზობთ თქვენს საჭიროებებზე მორგებულ დიზაინს",

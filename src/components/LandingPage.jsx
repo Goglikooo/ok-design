@@ -7,7 +7,8 @@ import { ArrowRight } from "lucide-react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import { SECTIONS } from "../../sections.config";
 import { Reveal } from "../utils/reveal";
-import { Opacity } from "@mui/icons-material";
+import { Link } from "react-router-dom";
+
 const images = [
   "images/hero images/1.jpg",
   "images/hero images/2.jpg",
@@ -100,20 +101,20 @@ export default function LandingPage({ id }) {
           </Reveal>
           <Reveal>
             <div className="md:flex-row text-[#ffffff] font-bold flex flex-col gap-3 ">
-              <button
-                className="bg-[#ea9573]  rounded-2xl pt-2 pb-2 pl-10 pr-10 flex justify-between align-center cursor-pointer"
-                onClick={() => scrollToSection("projects")}
+              <Link
+                to="/projects"
+                className="bg-[#ea9573] hover:bg-[#f4804e] rounded-2xl pt-2 pb-2 pl-10 pr-10 flex justify-between align-center cursor-pointer"
               >
                 {t("projectsButton")} <ArrowRight />
-              </button>
+              </Link>
 
-              <button
-                className="bg-[#ea9573]  rounded-2xl pt-2 pb-2 pl-10 pr-10 font-bold flex justify-between align-center cursor-pointer"
-                onClick={() => scrollToSection(SECTIONS.SERVICES)}
+              <Link
+                to="/contact"
+                className="bg-[#ea9573] hover:bg-[#f4804e] rounded-2xl pt-2 pb-2 pl-10 pr-10 font-bold flex justify-between align-center cursor-pointer"
               >
                 {t("getStarted")}
                 <ArrowRight />
-              </button>
+              </Link>
             </div>
           </Reveal>
         </div>

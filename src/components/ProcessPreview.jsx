@@ -42,7 +42,7 @@ export default function ProcessPreview({ id }) {
             </div>
 
             <Link to="/processes">
-              <button className="bg-[#ea9573] w-full text-white font-semibold pt-2 pb-2 pl-10 pr-10 cursor-pointer">
+              <button className="bg-[#ea9573] hover:bg-[#f4804e] rounded-2xl w-full text-white font-semibold pt-2 pb-2 pl-10 pr-10 cursor-pointer">
                 <span>{t("LearnAboutOurProcess")}</span>
               </button>
             </Link>

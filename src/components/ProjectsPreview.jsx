@@ -36,7 +36,7 @@ export default function ProjectsPreview({ id }) {
         </div>
 
         <Link to="/projects">
-          <button className="bg-[#ea9573]  w-full pt-2 pb-2 pl-10 pr-10 text-white font-semibold cursor-pointer">
+          <button className="bg-[#ea9573] hover:bg-[#f4804e] rounded-2xl w-full pt-2 pb-2 pl-10 pr-10 text-white font-semibold cursor-pointer">
             {t("viewAllProjects")}
           </button>
         </Link>
