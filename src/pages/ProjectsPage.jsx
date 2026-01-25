@@ -18,7 +18,7 @@ export default function ProjectsPage() {
       <motion.section
         variants={{
           hidden: { opacity: 0 },
-          show: { opacity: 1, transition: { staggerChildren: 0.25 } },
+          show: { opacity: 1, transition: { staggerChildren: 0.1 } },
         }}
         initial="hidden"
         animate="show"
@@ -35,15 +35,15 @@ export default function ProjectsPage() {
             <Link to={`/projects/${project.id}`}>
               <img
                 src={project.images[0]}
-                alt=""
+                alt="project main image"
                 className="transition duration-500 lg:grayscale-30 brightness-70 group-hover:grayscale-0 group-hover:brightness-100 group-hover:scale-102"
               />
 
               <button
-                className={`absolute top-[55%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 text-3xl lg:text-5xl text-white cursor-pointer  ${
+                className={`absolute top-[55%] left-[50%] transform w-full -translate-x-1/2 -translate-y-1/2  text-white cursor-pointer  ${
                   i18n.language == "ge" ? "font-georgian " : ""
                 }`}
-                style={{ fontSize: "40px" }}
+                style={{ fontSize: "38px" }}
               >
                 {t(`${project.title}`)}
                 <span className="block text-[1.6rem] mt-2">
