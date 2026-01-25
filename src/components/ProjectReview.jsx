@@ -50,7 +50,7 @@ export default function ProjectReview() {
           spaceBetween={40}
           slidesPerView={1}
           autoplay={{
-            delay: 5000,
+            delay: 10000,
             disableOnInteraction: false,
             reverseDirection: false,
           }}
