@@ -117,6 +117,7 @@ const resources = {
       FrenchDistrict: "French district",
       Tashkenti: "Tashkenti Street",
       Tamarashvili: "Tamarashvili Street",
+      BobWalsh: "Bob Walsh Street",
       //Cities
       Tbilisi: "Tbilisi",
       Batumi: "Batumi",
@@ -301,6 +302,8 @@ const resources = {
       GabrielSalosi: "გაბრიელ სალოსის ქუჩა",
       Tashkenti: "ტაშკენტის ქუჩა",
       Tamarashvili: "თამარაშვილის ქუჩა",
+      BobWalsh: "ბობ უოლშის ქუჩა",
+      //Cities
       Tbilisi: "თბილისი",
       Batumi: "ბათუმი",
       Gudauri: "გუდაური",
