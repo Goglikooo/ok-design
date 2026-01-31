@@ -40,10 +40,11 @@ export default function ServicesPage() {
 
       <div className=" flex-1 max-w-6xl mx-auto w-full px-4 flex flex-col items-center justify-start mt-0 xl:mt-15">
         <Outlet />
-        <Link to="/contact">
-          <button className="bg-[#ea9573] w-full text-white font-semibold pt-2 pb-2 pl-10 pr-10 cursor-pointer hover:bg-[#f4804e] mb-10 ">
-            <span>{t("contactMe")}</span>
-          </button>
+        <Link
+          to="/contact"
+          className="bg-[#ea9573] hover:bg-[#f4804e] text-md lg:text-lg text-white px-8 py-3 rounded-md  transition-colors cursor-pointer"
+        >
+          {t("contactMe")}
         </Link>
       </div>
     </div>

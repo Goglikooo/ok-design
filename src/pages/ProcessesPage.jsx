@@ -40,7 +40,7 @@ export default function ProcessesPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <Link
             to="/contact"
-            className="bg-[#ea9573] hover:bg-[#f4804e] text-white px-8 py-3 rounded-md  transition-colors cursor-pointer"
+            className="bg-[#ea9573] hover:bg-[#f4804e] text-md lg:text-lg text-white px-8 py-3 rounded-md  transition-colors cursor-pointer"
           >
             {t("contactUs")}
           </Link>

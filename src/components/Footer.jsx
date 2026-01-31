@@ -17,13 +17,15 @@ export default function Footer({ id }) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-3 gap-8 py-8  border-t border-b border-[#f5be9e]">
           <div>
-            <div className="mb-4 text-2xl">OK Design</div>
-            <p>{t("slogan")}</p>
+            <div className="mb-4 text-3xl">OK Design</div>
+            <p className="text-xl">{t("slogan")}</p>
           </div>
           <div>
             <h3 className="mb-4 text-2xl">{t("contact")}</h3>
-            <a href="mailto:info@okdesign.ge">info@okdesign.ge</a>
-            <p>+995 514 257 257</p>
+            <a href="mailto:info@okdesign.ge" className="text-xl">
+              info@okdesign.ge
+            </a>
+            <p className="text-xl">+995 514 257 257</p>
           </div>
           <div>
             <h3 className="mb-4 text-2xl">{t("followUs")}</h3>
