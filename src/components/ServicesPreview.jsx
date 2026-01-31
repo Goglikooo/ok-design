@@ -42,15 +42,15 @@ export default function ServicesPreview({ id }) {
                   <service.icon className="w-8 h-8" />
                 </div>
 
-                <h3 className="text-white mb-3  ">{t(service.title)}</h3>
-                <p className="text-white ">{t(service.description)}</p>
+                <h3 className="text-white mb-3 text-2xl">{t(service.title)}</h3>
+                <p className="text-white text-lg">{t(service.description)}</p>
               </div>
             ))}
           </div>
         </Reveal>
         <div className="text-center">
           <Link to="/services">
-            <button className="bg-[#ea9573] hover:bg-[#f4804e] rounded-2xl w-full text-white font-semibold pt-2 pb-2 pl-10 pr-10 cursor-pointer">
+            <button className="bg-[#ea9573] hover:bg-[#f4804e] text-md lg:text-lg rounded-2xl w-full text-white font-semibold pt-2 pb-2 pl-10 pr-10 cursor-pointer">
               <span>{t("viewAllServices")}</span>
             </button>
           </Link>

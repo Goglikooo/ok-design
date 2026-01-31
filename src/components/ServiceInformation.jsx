@@ -33,7 +33,7 @@ export default function ServicesElement() {
         </div>
       </div>
       <div className="max-w-2xl mx-auto">
-        <img src="/images/Service.jpg" alt="" />
+        <img src="/images/Service.jpg" alt="servicesImage" />
       </div>
     </div>
   );

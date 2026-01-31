@@ -24,9 +24,11 @@ export default function ProcessPreview({ id }) {
               </h2>
             </Reveal>
             <Reveal>
-              <p className=" mb-8">{t("howWeWorkFullText")}</p>
+              <p className=" mb-8 text-lg lg:text-xl">
+                {t("howWeWorkFullText")}
+              </p>
             </Reveal>
-            <div className="space-y-3 mb-8">
+            <div className="space-y-3 mb-8 text-lg lg:text-xl">
               {processSteps.map((step, index) => (
                 <div key={index} className="flex items-center gap-3">
                   <Reveal>
@@ -35,14 +37,14 @@ export default function ProcessPreview({ id }) {
                     </div>
                   </Reveal>
                   <Reveal>
-                    <span className="text-white">{t(step)}</span>
+                    <span className="text-white ">{t(step)}</span>
                   </Reveal>
                 </div>
               ))}
             </div>
 
             <Link to="/processes">
-              <button className="bg-[#ea9573] hover:bg-[#f4804e] rounded-2xl w-full text-white font-semibold pt-2 pb-2 pl-10 pr-10 cursor-pointer">
+              <button className="bg-[#ea9573] hover:bg-[#f4804e] text-md lg:text-lg rounded-2xl w-full text-white font-semibold pt-2 pb-2 pl-10 pr-10 cursor-pointer">
                 <span>{t("LearnAboutOurProcess")}</span>
               </button>
             </Link>

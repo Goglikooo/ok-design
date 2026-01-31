@@ -40,10 +40,9 @@ export default function ProjectsPage() {
               />
 
               <button
-                className={`absolute top-[55%] left-[50%] transform w-full -translate-x-1/2 -translate-y-1/2  text-white cursor-pointer  ${
+                className={`absolute top-[55%] left-[50%] transform w-full -translate-x-1/2 -translate-y-1/2  text-white cursor-pointer text-3xl md:text-4xl lg:text-5xl ${
                   i18n.language == "ge" ? "font-georgian " : ""
                 }`}
-                style={{ fontSize: "38px" }}
               >
                 {t(`${project.title}`)}
                 <span className="block text-[1.6rem] mt-2">

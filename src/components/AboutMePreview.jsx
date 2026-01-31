@@ -20,14 +20,14 @@ export default function AboutMePreview({ id }) {
                 {t("aboutMe")}
               </h2>
             </Reveal>
-            <div className="font-medium tracking-wider mb-8">
+            <div className="font-medium tracking-wider mb-8 text-lg md:text-lg lg:text-xl">
               <Reveal>
                 <p>{t("aboutMeText")}</p>
-                <p className="mt-8">{t("aboutMeTextEnd")}</p>
+                <p className="mt-8 ">{t("aboutMeTextEnd")}</p>
               </Reveal>
             </div>
             <Link to="/contact">
-              <button className="bg-[#ea9573] hover:bg-[#f4804e] rounded-2xl w-full text-white font-semibold pt-2 pb-2 pl-10 pr-10 cursor-pointer">
+              <button className="bg-[#ea9573] hover:bg-[#f4804e] text-md lg:text-lg rounded-2xl w-full text-white font-semibold pt-2 pb-2 pl-10 pr-10 cursor-pointer">
                 <span>{t("contactMe")}</span>
               </button>
             </Link>

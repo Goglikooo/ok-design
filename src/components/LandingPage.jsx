@@ -95,15 +95,15 @@ export default function LandingPage({ id }) {
             </h1>
           </Reveal>
           <Reveal>
-            <p className=" text-1xl md:text-2xl font-semibold text-center">
+            <p className=" text-xl md:text-2xl font-semibold text-center">
               {t("sloganAddition")}
             </p>
           </Reveal>
           <Reveal>
-            <div className="md:flex-row text-[#ffffff] font-bold flex flex-col gap-3 ">
+            <div className="md:flex-row text-[#ffffff] font-bold flex flex-col gap-3 text-md lg:text-lg">
               <Link
                 to="/projects"
-                className="bg-[#ea9573] hover:bg-[#f4804e] rounded-2xl pt-2 pb-2 pl-10 pr-10 flex justify-between align-center cursor-pointer"
+                className="bg-[#ea9573] hover:bg-[#f4804e]  rounded-2xl pt-2 pb-2 pl-10 pr-10 flex justify-between align-center cursor-pointer"
               >
                 {t("projectsButton")} <ArrowRight />
               </Link>

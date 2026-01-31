@@ -67,8 +67,8 @@ export default function ProjectCardsGenerator({ projectsArray }) {
                     i18n.language == "ge" ? "GeorgianUI" : "Cinzel"
                   }`,
                   fontWeight: "500",
+                  fontSize: "18px",
                 }}
-                className="font-georgian"
               >
                 {t(`${t("totalArea")}: ${card.description}${t("m2")}`)}
               </Typography>
