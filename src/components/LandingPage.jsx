@@ -10,11 +10,11 @@ import { Reveal } from "../utils/reveal";
 import { Link } from "react-router-dom";
 
 const images = [
-  "images/hero images/1.jpg",
-  "images/hero images/2.jpg",
-  "images/hero images/3.jpg",
-  "images/hero images/4.jpg",
-  "images/hero images/5.jpg",
+  "images/hero images/1.avif",
+  "images/hero images/2.avif",
+  "images/hero images/3.avif",
+  "images/hero images/4.avif",
+  "images/hero images/5.avif",
 ];
 export default function LandingPage({ id }) {
   const { t } = useTranslation();
