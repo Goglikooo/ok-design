@@ -7,6 +7,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 export default function Footer({ id }) {
   const { t, i18n } = useTranslation();
+  const currentYear = new Date().getFullYear();
   return (
     <footer
       id={id}
@@ -55,7 +56,7 @@ export default function Footer({ id }) {
           </div>
         </div>
         <div className="mt-8 pt-8 text-center">
-          <p>© 2025 OK Design. All rights reserved.</p>
+          <p>© {currentYear} OK Design. All rights reserved.</p>
         </div>
       </div>
     </footer>
